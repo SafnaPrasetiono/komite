@@ -1,0 +1,6 @@
+.owl-dots .owl-dot{
+    color: #fff;
+}
+.owl-dots .owl-dot.active{
+    color: rgb(200, 200, 200);
+}

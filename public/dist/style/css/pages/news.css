@@ -1,0 +1,30 @@
+.blue-sky {
+    background: #56CCF2;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F80ED, #56CCF2);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.card-link-news-banners {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-link-news-banners:hover {
+    color: #2F80ED;
+}
+
+.card-news-secondary {
+    overflow: hidden;
+    text-decoration: none;
+    position: relative;
+}
+
+.card-news-secondary:hover>.img-news-secondary {
+    transform: scale(1.1);
+    transition: linear all 0.2s;
+}
