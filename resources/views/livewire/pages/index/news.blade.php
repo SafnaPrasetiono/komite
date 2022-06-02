@@ -14,9 +14,9 @@
                 @foreach ($data as $item)
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="box-news card border opacity-0">
-                        <div class="btn-images-news ratio ratio-16x9">
-                        <img src="{{ url('/images/news/' . $item->images) }}"
-                            class="img-news-banners" alt="{{ $item->images }}">
+                        <div class="btn-images-news ratio ratio-16x9" style="background-image: url('/images/news/{{$item->images}}')">
+                        {{-- <img src="{{ url('/images/news/' . $item->images) }}"
+                            class="img-news-banners" alt="{{ $item->images }}"> --}}
                         </div>
                         <div class="card-body">
                             <a href="{{ route('news.detail', ['slug' => $item->slug, 'id' => $item->id_news ]) }}" class="card-title fs-5 fw-bold text-ellipsis-2 text-decoration-none mb-1">
