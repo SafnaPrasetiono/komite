@@ -2,7 +2,7 @@
 
 ## About Website
 
-Website ini milik usaha mikro kecil dan menengah indonesia bersatu (KOPITU). website ini merupakan hal penting untuk pemberitahuan informasi kepada para UMK dan UMKM indonesia. Dengan bersinerginya beberapa lembaga pemerintah dan swasta, maka diharapkan Badan ini akan dapat melaksanakan kegiatan pembinaan dan pemberdayaan UMKM yang terpadu.
+Website ini milik usaha mikro kecil dan menengah indonesia bersatu (KOPITU). website ini merupakan hal penting untuk pemberitahuan informasi kepada para UMK dan UMKM indonesia. Dengan bersinerginya beberapa lembaga pemerintah dan swasta, maka diharapkan Badan ini akan dapat melaksanakan kegiatan pembinaan dan pemberdayaan UMKM yang terpadu. dengan memiliki layanan service
 
 ## About Komite Umkm
 
