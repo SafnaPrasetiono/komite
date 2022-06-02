@@ -48,7 +48,7 @@ class galeryAdmin extends Controller
                 'description' => $request->description,
             ]);
             if ($data) {
-                return redirect()->route('admin.gallery.create.images', ['id' => $data['id_galeries_contents']]);
+                return redirect()->route('admin.gallery.create.images', ['id' => $data['id_galleries_contents']]);
             } else {
                 return redirect()->back()->with('errors', 'Oops, maaf database sedang sibuk ulangi nanti!');
             }

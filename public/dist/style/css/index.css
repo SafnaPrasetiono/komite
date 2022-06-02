@@ -173,9 +173,6 @@
     border-radius: 4px;
     cursor: pointer;
 }
-.box-galery .box-content .btn-galery:hover .img-galery{
-    transform: scale(1.2);
-}
 .box-galery .box-content .img-galery{
     transition: all 0.3s;
     width: 100%;
@@ -183,6 +180,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.box-galery .box-content .btn-galery:hover .img-galery{
+    transform: scale(1.2);
 }
 
 @media(max-width: 992px){

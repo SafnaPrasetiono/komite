@@ -12,16 +12,6 @@ class Data extends Component
     use WithPagination;
 
     public $search;
-    public $img;
-
-    protected $listeners = ['showModals'];
-
-    public function showModals($data)
-    {
-        // dd($data);
-        $this->img = galleries::find($data);
-        $this->dispatchBrowserEvent('showXmodals');
-    }
 
     public function render()
     {

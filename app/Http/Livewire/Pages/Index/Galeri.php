@@ -20,7 +20,7 @@ class Galeri extends Component
 
     public function render()
     {
-        $data = galleries_content::orderBy('created_at', 'desc')->limit(3)->get();
+        $data = galleries_content::where('publish', true)->orderBy('created_at', 'desc')->limit(3)->get();
         return view('livewire.pages.index.galeri', ['data' => $data]);
     }
 }

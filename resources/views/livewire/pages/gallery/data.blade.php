@@ -61,27 +61,4 @@
         </div>
         @endif
     </div>
-
-    <div class="modal fade" id="imgModals" tabindex="1">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Data Galeri</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-0">
-                    @if($img)
-                    <img src="{{ url('/images/galleries/' . $img->location) }}" alt="{{ $img->name_galleries }}"
-                        class="img-fluid">
-                    @endif
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener('showXmodals', function(events) {
-            $('#imgModals').modal('show');
-        })
-    </script>
 </div>
