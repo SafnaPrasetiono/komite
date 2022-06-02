@@ -2,14 +2,14 @@
     <div class="row">
         @foreach ($images as $items)
         <div class="col-6 col-md-4 col-lg-3">
-            <div class="btn-galery ratio ratio-4x3" wire:click='show({{ $items->id_galleries }})'>
+            <div class="btn-galery ratio ratio-4x3" wire:click='showImages({{ $items->id_galleries }})'>
                 <div class="img-galery" style="background-image: url('/images/galleries/{{$items->location}}')"></div>
             </div>
         </div>
         @endforeach
     </div>
 
-    <div wire:ignore.self class="modal fade" id="imgModals" tabindex="1">
+    <div class="modal fade" id="imgModals" tabindex="1">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -17,9 +17,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-0">
-                    @if($img)
-                    <img src="{{ url('/images/galleries/' . $img->location) }}" alt="{{ $img->name_galleries }}"
-                        class="img-fluid">
+                    @if($data)
+                    <img src="{{ url('/images/galleries/' . $data->location) }}" class="img-fluid">
                     @endif
                 </div>
             </div>

@@ -8,6 +8,13 @@
 
 }
 
+
+.img-news-banner{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .card-link-news-banners {
     cursor: pointer;
     text-decoration: none;
@@ -23,8 +30,12 @@
     text-decoration: none;
     position: relative;
 }
-
-.card-news-secondary:hover>.img-news-secondary {
+.card-news-secondary .img-news-secondary{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-news-secondary:hover .img-news-secondary {
     transform: scale(1.1);
     transition: linear all 0.2s;
 }

@@ -46,19 +46,40 @@
                             </div>
                             <div class="py-3">
                                 <div class="row g-2">
-                                    <?php for($x=0; $x< 5; $x++) : ?>
+                                    
                                     <div class="col-4">
-                                        <div class="news-facebook bg-primary">
-                                            <div class="d-flex justify-content-center align-items-center"
-                                                style="height: 100px">
-                                                <div class="text-center text-white">
-                                                    <i class="fas fa-facebook fa-2x fa-fw"></i>
-                                                    <p class="mb-0">Facebook</p>
-                                                </div>
+                                        <a href="#" class="btn bg-primary p-0 w-100 py-4">
+                                            <div class="text-center text-white">
+                                                    <i class="fab fa-facebook fa-lg fa-fw"></i>
+                                                    <p class="mb-0 fw-bold">Facebook</p>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
-                                    <?php endfor; ?>
+                                    <div class="col-4">
+                                        <a href="#" class="btn bg-primary p-0 w-100 py-4">
+                                            <div class="text-center text-white">
+                                                    <i class="fab fa-twitter fa-lg fa-fw"></i>
+                                                    <p class="mb-0 fw-bold">Twitter</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#" class="btn bg-primary p-0 w-100 py-4">
+                                            <div class="text-center text-white">
+                                                    <i class="fab fa-instagram fa-lg fa-fw"></i>
+                                                    <p class="mb-0 fw-bold">Instagram</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#" class="btn bg-primary p-0 w-100 py-4">
+                                            <div class="text-center text-white">
+                                                    <i class="fab fa-youtube fa-lg fa-fw"></i>
+                                                    <p class="mb-0 fw-bold">Youtube</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>

@@ -8,16 +8,17 @@ use Livewire\Component;
 class Images extends Component
 {
     public $id_galleries_contents;
-    public $img;
+    public $data;
 
     public function mount($post)
     {
         $this->id_galleries_contents = $post->id_galleries_contents;
     }
 
-    public function show($id)
+    public function showImages($id)
     {
-        $this->img = galleries::find($id); 
+        $this->data = galleries::find($id);
+        // dd($this->data);
         $this->dispatchBrowserEvent('showModals');
     }
 
