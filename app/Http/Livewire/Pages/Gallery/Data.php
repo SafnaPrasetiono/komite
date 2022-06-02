@@ -10,7 +10,6 @@ use Livewire\WithPagination;
 class Data extends Component
 {
     use WithPagination;
-
     public $search;
 
     public function render()

@@ -45,7 +45,7 @@
                         </p>
                     </div>
                     <div class="p-3">
-                        @livewire('pages.gallery.images', ['post' => $item])
+                        @livewire('pages.gallery.images', ['post' => $item, 'indexs' => $index + 1])
                     </div>
                 </div>
             </div>
