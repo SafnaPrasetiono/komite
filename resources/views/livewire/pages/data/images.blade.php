@@ -9,7 +9,7 @@
         @endforeach
     </div>
 
-    <div class="modal fade" id="imgModals" tabindex="9">
+    <div class="modal fade" id="imgModals{{ $numbers }}" tabindex="9">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -26,8 +26,8 @@
     </div>
 
     <script>
-        document.addEventListener('showModals', function() {
-            $('#imgModals').modal('show');
+        document.addEventListener('showModals' + {{ $numbers }}, function() {
+            $('#imgModals' + {{ $numbers }}).modal('show');
         })
     </script>
 </div>

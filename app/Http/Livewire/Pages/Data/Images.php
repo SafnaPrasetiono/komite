@@ -9,16 +9,18 @@ class Images extends Component
 {
     public $id_galleries_contents;
     public $img;
+    public $numbers;
 
-    public function mount($post)
+    public function mount($post, $indexs)
     {
+        $this->numbers = $indexs;
         $this->id_galleries_contents = $post->id_galleries_contents;
     }
 
     public function show($id)
     {
         $this->img = galleries::find($id);
-        $this->dispatchBrowserEvent('showModals');
+        $this->dispatchBrowserEvent('showModals' . $this->numbers);
         // $this->emit('showModals', $id);
     }
 

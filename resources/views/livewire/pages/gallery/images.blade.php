@@ -10,7 +10,7 @@
     </div>
 
     @if($img)
-    <div class="myModals{{$numbers}} modal fade" id="imgModals" tabindex="1">
+    <div class="myModals{{$numbers}} modal fade" id="imgModals{{$numbers}}" tabindex="1">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
