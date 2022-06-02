@@ -25,9 +25,10 @@
     @if ($data->count() != 0)    
     @foreach ($data as $item)
     <div class="card border-0 mb-5">
-        <div class="row g-0">
+        <div class="row align-items-start g-0">
             <div class="col-12 col-sm-4">
-                <img src="{{ url('/images/news/' . $item->images) }}" class="img-fluid" alt="...">
+                <div class="btn-images-news ratio ratio-16x9" style="background-image: url('/images/news/{{$item->images}}')">
+                </div>
             </div>
             <div class="col-12 col-sm-8">
                 <div class="card-body px-0 px-sm-2 px-md-3 py-sm-0 py-md-0">
