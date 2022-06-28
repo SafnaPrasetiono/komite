@@ -13,6 +13,34 @@
     .box {
         display: block;
     }
+    
+    .btn-img {
+        width: 100%;
+        height: 280px;
+        overflow: hidden;
+        padding: 0;
+        border: 0px;
+    }
+
+    .img-gallery {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 0.2s;
+    }
+    
+    .btn-img:hover > .img-gallery{
+        transform: scale(1.2);
+
+    }
+
+    @media(max-width: 768px) {
+        .btn-img {
+            height: 200px;
+        }
+    }
 </style>
 @endsection
 

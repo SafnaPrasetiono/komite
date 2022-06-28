@@ -8,19 +8,18 @@ use Livewire\Component;
 
 class Galeri extends Component
 {
-    public $img;
+    // use WithPagination;
+    public $detail;
 
-    protected $listeners = ['showModals'];
-
-    public function showModals($data)
+    public function show($id)
     {
-        $this->img = galleries::find($data);
+        $this->detail = galleries::find($id);
         $this->dispatchBrowserEvent('showModals');
     }
 
     public function render()
     {
-        $data = galleries_content::where('publish', true)->orderBy('created_at', 'desc')->limit(3)->get();
+        $data = galleries::orderBy('created_at', 'desc')->limit(11)->get();
         return view('livewire.pages.index.galeri', ['data' => $data]);
     }
 }
