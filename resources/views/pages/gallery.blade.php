@@ -1,7 +1,7 @@
 @extends('layouts.panel')
 
 @section('head')
-<title>OOH KUPU KUPU GLOBAL - Galeri Data</title>
+<title>Komite UMKM - Galeri Data</title>
 <style>
     .btn-img {
         width: 100%;
