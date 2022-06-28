@@ -193,6 +193,24 @@
     background-size: cover;
 }
 
+.ratio-3x4-index{
+    --bs-aspect-ratio: calc(4 / 3 * 100%);
+}
+.ratio-3x4{
+    width: 60%;
+    --bs-aspect-ratio: calc(4 / 3 * 100%);
+}
+.ratio-9x16{
+    --bs-aspect-ratio: calc(16 / 9 * 100%);
+}
+.img-events{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media(max-width: 992px){
     .navbar{
         height: auto;
@@ -211,6 +229,9 @@
         background-position: top;
     }
     .background-left {
+        width: 100%;
+    }
+    .ratio-3x4{
         width: 100%;
     }
 }

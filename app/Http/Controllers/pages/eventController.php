@@ -4,6 +4,7 @@ namespace App\Http\Controllers\pages;
 
 use App\Http\Controllers\Controller;
 use App\Models\events;
+use App\Models\events_register;
 use Illuminate\Http\Request;
 
 class eventController extends Controller
@@ -17,6 +18,7 @@ class eventController extends Controller
     public function detail($slug)
     {
         $data = events::where('slug', $slug)->first();
-        return view('pages.events.detail', ['data' => $data]);
+        $registrar = events_register::where('events_id', $data->id_events)->count();
+        return view('pages.events.detail', ['data' => $data, 'registrar' => $registrar]);
     }
 }

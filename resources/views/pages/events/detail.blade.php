@@ -18,7 +18,7 @@
 
 @section('pages')
 <div class="d-block" style="height: 70px"></div>
-<div class="py-5 bg-danger">
+<div class="py-5 bg-primary">
     <div class="container">
         <h2 class="fw-bold text-white">{{ $data->title }}</h2>
         <ol class="breadcrumb mb-0">
@@ -81,7 +81,7 @@
                     <i class="far fa-users fa-4x fa-fw mb-3"></i>
                     <div class="py-2">
                         <p class="mb-0">Jumlah Terdaftar</p>
-                        <p class="fw-bold">100 orang</p>
+                        <p class="fw-bold">{{ $registrar }} orang</p>
                     </div>
                 </div>
             </div>

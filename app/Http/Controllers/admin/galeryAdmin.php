@@ -81,7 +81,7 @@ class galeryAdmin extends Controller
             foreach ($request->file('images') as $photo) {
                 $resorces = $photo;
                 $originFullName = $resorces->getClientOriginalName();
-                $originName = pathinfo($originFullName, PATHINFO_FILENAME);;
+                $originName = pathinfo($originFullName, PATHINFO_FILENAME);
                 $extension = $resorces->getClientOriginalExtension();
                 $size = $resorces->getSize();
                 $newImagesNames = "BNR-" . substr(md5($originName . date("YmdHis")), 0, 28) . '.' . $extension;

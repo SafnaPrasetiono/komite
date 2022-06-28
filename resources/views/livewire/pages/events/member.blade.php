@@ -4,6 +4,16 @@
             <input type="text" class="form-control" placeholder="Cari Peserta...">
         </div>
     </div>
+    @if ($data->count() == 0)
+        <div class="alert alert-info py-5">
+            <div class="text-center text-uppercase">
+                <i class="fas fa-user-alt-slash fa-4x fa-fw mb-4"></i>
+                <h1 class="">Oops!</h1>
+                <p class="fs-5 mb-0">Belum ada data yang daftar</p>
+                <p class="fs-5">Segera daftaran diri anda klik tombol diatas</p>
+            </div>
+        </div>
+    @else    
     <div class="d-block table-responsive">
         <table class="table table-borderless">
             <thead class="alert-secondary">
@@ -26,4 +36,5 @@
             </tbody>
         </table>
     </div>
+    @endif
 </div>

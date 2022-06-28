@@ -103,6 +103,7 @@
 
 @livewire('pages.index.invitation')
 @livewire('pages.index.news')
+@livewire('pages.index.events')
 
 <div class="py-4 mb-4">
     <div class="container">

@@ -5,22 +5,21 @@
         </div>
     </div>
     <div class="d-block">
-        @foreach ($data as $item)    
-        <div class="card mb-3">
-            <div class="row g-0">
-                <div class="col-md-3">
-                    <div class="ratio ratio-3x4">
-                        <img src="{{ url('/images/events/' . $item->images) }}" class="img-fluid rounded-start" alt="...">
-                    </div>
+        @foreach ($data as $item)
+        <div class="card flex-columnt flex-md-row overflow-hidden mb-3">
+            <div class="ratio ratio-3x4">
+                <div class="img-events" style="background-image: url('/images/events/{{ $item->images }}')">
                 </div>
-                <div class="col-md-9">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ $item->title }}</h5>
-                        <p class="card-text"><small class="text-muted">Jadwal, {{ date('d F Y', strtotime($item->schedule)) }} - {{ date('H:i', strtotime($item->schedule)) }}</small></p>
-                        <p class="card-text text-ellipsis-5">{{ $item->description }}</p>
-                        <a href="{{ route('events.detail', ['slug' => $item->slug]) }}" class="btn btn-outline-danger">Lihat Detail</a>
-                    </div>
-                </div>
+            </div>
+            <div class="card-body">
+                <a href="{{ route('events.detail', ['slug' => $item->slug]) }}" class="card-title fs-5 fw-bold text-ellipsis-2 text-decoration-none mb-1">
+                    {{ $item->title }}
+                </a>
+                <p class="card-text"><small class="text-muted">Jadwal, {{ date('d F Y', strtotime($item->schedule)) }} -
+                        {{ date('H:i', strtotime($item->schedule)) }}</small></p>
+                <p class="card-text text-ellipsis-5 mb-3">{{ $item->description }}</p>
+                <a href="{{ route('events.detail', ['slug' => $item->slug]) }}" class="btn link-primary px-0">Lihat detail <i
+                    class="fas fa-arrow-right fa-sm fa-fw"></i> </a>
             </div>
         </div>
         @endforeach

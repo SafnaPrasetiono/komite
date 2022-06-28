@@ -11,13 +11,13 @@
         content="Komite Pengusaha Mikro Kecil Menengah Indonesia Bersatu (KOPITU) dibentuk sebagai wadah di tingkat nasional yang menyatukan pelaku usaha dan pemangku kepentingan lain baik pemerintah maupun non pemerintah lintas sectoral dan multi sectoral untuk bersinergi meningkatkan kemampuan bersaing UMKM Indonesia.">
     <meta name="keywords" content="kopitu, kopitu umkm, komite, komite umkm, komite-umkm, umkm"
         type="application/rss+xml" title="Komite Pengusaha Mikro Kecil Menengah Indonesia Bersatu » Feed"
-        href="https://www.komite-umkm.org/feed/">
+        href="https://www.kopitu.co.id/feed/">
     <link rel="alternate" type="application/rss+xml"
         title="Komite Pengusaha Mikro Kecil Menengah Indonesia Bersatu » Comments Feed"
-        href="https://www.komite-umkm.org/comments/feed/">
+        href="https://www.kopitu.co.id/comments/feed/">
 
-    <meta name="msapplication-navbutton-color" content="#dd894c" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#dd894c" />
+    <meta name="msapplication-navbutton-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
     <link rel="icon" type="image/png" href="{{asset('/images/logo/kopitu.png')}}" />
 
 
@@ -30,7 +30,9 @@
     <link rel="stylesheet" href="{{ asset('/dist/owl/css/owl.carousel.min.css') }}"> --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&display=swap"
+        rel="stylesheet">
     @livewireStyles
 </head>
 
@@ -65,15 +67,30 @@
                     <li class="nav-item dropstart">
                         <a class="nav-link text-dark ps-3 pe-1" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown">
-                            <img src="{{ url('/images/avatar/admin/default.png') }}" alt="user" class="img-user">
+                            @if (auth('admin')->user()->avatar == 'sample-images.png')
+                    <img src="{{ url('images/avatar/' . auth('admin')->user()->avatar) }}"
+                        alt="{{auth('admin')->user()->username}}" class="img-user" width="64px"
+                        height="64px">
+                    @else
+                    <img src="{{ url('images/avatar/admin/' . auth('admin')->user()->avatar) }}"
+                        alt="{{auth('admin')->user()->username}}" class="img-user" width="64px"
+                        height="64px">
+                    @endif
                         </a>
                         <div class="dropdown-menu mt-2 pt-0" aria-labelledby="navbarDropdown">
                             <div class="d-flex p-3 border-bottom mb-2">
-                                <img src="{{ url('/images/avatar/admin/default.png') }}" alt="user"
-                                    class="img-user me-2">
+                                @if (auth('admin')->user()->avatar == 'sample-images.png')
+                                <img src="{{ url('images/avatar/' . auth('admin')->user()->avatar) }}"
+                                    alt="{{auth('admin')->user()->username}}" class="img-user me-2" width="64px"
+                                    height="64px">
+                                @else
+                                <img src="{{ url('images/avatar/admin/' . auth('admin')->user()->avatar) }}"
+                                    alt="{{auth('admin')->user()->username}}" class="img-user me-2" width="64px"
+                                    height="64px">
+                                @endif
                                 <div class="d-block mt-1">
-                                    <p class="fw-bold m-0 lh-1">name</p>
-                                    <small>email</small>
+                                    <p class="fw-bold m-0 lh-1">{{auth('admin')->user()->username}}</p>
+                                    <small>{{auth('admin')->user()->email}}</small>
                                 </div>
                             </div>
                             <a class="dropdown-item" href="#">
@@ -95,9 +112,17 @@
         <div class="slider" id="sliders">
             <div class="slider-head">
                 <div class="d-block p-3">
-                    <img src="#" alt="user" class="slider-img-user mb-2">
-                    <p class="fw-bold mb-0 lh-1 text-white">Name</p>
-                    <small class="text-white">Mail</small>
+                    @if (auth('admin')->user()->avatar == 'sample-images.png')
+                    <img src="{{ url('images/avatar/' . auth('admin')->user()->avatar) }}"
+                        alt="{{auth('admin')->user()->username}}" class="slider-img-user mb-2" width="64px"
+                        height="64px">
+                    @else
+                    <img src="{{ url('images/avatar/admin/' . auth('admin')->user()->avatar) }}"
+                        alt="{{auth('admin')->user()->username}}" class="slider-img-user mb-2" width="64px"
+                        height="64px">
+                    @endif
+                    <p class="fw-bold mb-0 lh-1 text-white">{{auth('admin')->user()->username}}</p>
+                    <small class="text-white">{{auth('admin')->user()->email}}</small>
                 </div>
             </div>
             <div class="slider-body px-1 pb-4">
@@ -105,7 +130,7 @@
                     <a class="nav-link px-3 active" href="{{ route('admin.index') }}">
                         <i class="fa fa-home box-icon" aria-hidden="true"></i>Home
                     </a>
-                    <a class="nav-link px-3" href="#">
+                    <a class="nav-link px-3" href="{{ route('admin.profile') }}">
                         <i class="fas fa-user box-icon" aria-hidden="true"></i>Profile
                     </a>
                     <hr class="soft my-1 bg-white">
@@ -122,7 +147,7 @@
                         </a>
                     </div> --}}
                     <a class="nav-link px-3" href="{{ route('admin.events') }}">
-                        <i class="far fa-backpack box-icon fa-fw"></i>Events
+                        <i class="fas fa-calendar-alt box-icon"></i>Events
                     </a>
                     <hr class="soft my-1 bg-white">
                     <a class="nav-link px-3" href="{{ route('admin.news') }}">
@@ -135,7 +160,8 @@
                     <a class="nav-link px-3" href="{{ route('admin.banners') }}">
                         <i class="fas fa-image box-icon"></i>Banners
                     </a>
-                    {{-- <hr class="soft my-1 bg-white">
+                    {{--
+                    <hr class="soft my-1 bg-white">
                     <a class="nav-link px-3" href="#">
                         <i class="fas fa-file-alt box-icon fa-fw"></i>Pages
                     </a>
@@ -161,7 +187,7 @@
     <script src="{{ url('/dist/app/js/app.js') }}"></script>
     <script src="{{ url('/dist/style/js/alert.js') }}"></script>
     <script src="{{ url('/dist/style/js/admin/panel.js') }}"></script>
-    <script src="{{ url('/dist/style/js/admin/chart.js') }}"></script>
+    {{-- <script src="{{ url('/dist/style/js/admin/chart.js') }}"></script> --}}
     <script src="{{ url('/dist/ckeditor5/ckeditor.js') }}"></script>
     @livewireScripts
 
