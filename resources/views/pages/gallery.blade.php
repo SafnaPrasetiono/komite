@@ -53,5 +53,9 @@
 @endsection
 
 @section('script')
-
+<script>
+    function coba(){
+        console.log('allowed');
+    }
+</script>
 @endsection

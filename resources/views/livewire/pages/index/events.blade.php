@@ -1,6 +1,10 @@
 <div>
-    <div class="py-5 alert-secondary">
+    <div class="py-5 alert-info">
         <div class="container">
+            <div class="d-block mb-4">
+                <h2>Events</h2>
+                <p class="">Update events terbaru komite UMKM</p>
+            </div>
             <section class="splide">
                 <div class="splide__track">
                     <ul class="splide__list">
