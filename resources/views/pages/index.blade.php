@@ -4,56 +4,70 @@
 <title>Mitra Strategis – Komite Pengusaha Mikro Kecil Menengah Indonesia Bersatu</title>
 <link rel="stylesheet" href="{{ url('/dist/style/css/pages/index.css') }}">
 <style>
-    .box{
+    .banner-images {
+        background-repeat: no-repeat;
+        background-position: left, bottom;
+        background-size: cover;
+    }
+
+    .box {
         display: block;
     }
 </style>
 @endsection
 
 @section('pages')
-<div class="banner-elements text-dark-blue">
+<div class="py-5 text-dark-blue">
+    <div class="d-block" style="height: 70px"></div>
     <div class="background-left"></div>
     <div class="background-right"></div>
-    <img src="{{ url('/images/elements/yoyok.png') }}" alt="yoyok-pitoyo"
-        class="d-none d-lg-block position-absolute bottom-0 animate__animated animate__fadeIn animate__slow" width="42%">
-    <div class="container pt-4 pb-5 py-lg-5">
-        <div class="row justify-content-md-center align-items-center gy-5">
-            <div class="col-12 col-sm-9 col-md-8 col-lg-6">
-                <img src="{{ url('/images/elements/yoyok.png') }}" alt="yoyok-pitoyo"
-                    class="img-fluid d-block d-lg-none w-100 animate__animated animate__fadeIn animate__slow">
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="text-center text-lg-start mb-3">
-                    <h2 class="mb-3 fw-bold animate__animated animate__fadeInUp">KOPITU UMKM INDONESIA</h2>
-                    <p class="mb-5 animate__animated animate__fadeInUp animate__fast">KOPITU hadir untuk melakukan pendampingan dan bantuan kepada UMKM dan UKM untuk
-                        meningkatkan kesejahteraan UMKM dan UKM dalam pasar dalam negeri maupun ekspor dalam bentuk
-                        fasilitasi pelatihan, alih teknologi, pemasaran , bantuan hukum serta penguatan modal usaha dan
-                        pembiayaan.</p>
-                    <p class="fw-bold text-uppercase animate__animated animate__fadeInUp animate__fast">Yoyok Pitoyo, Salam KOPITU</p>
+    <div class="d-block">
+        <div class="container">
+            <div class="row justify-content-md-center align-items-center gy-5">
+                <div class="col-12 col-sm-9 col-md-8 col-lg-6">
+                    <img src="{{ url('/images/elements/yoyok-banners.png') }}" alt="yoyok-pitoyo"
+                        class="img-fluid w-100 d-none d-lg-block animate__animated animate__fadeIn animate__slow">
+                    <img src="{{ url('/images/elements/yoyok.png') }}" alt="yoyok-pitoyo"
+                        class="img-fluid w-100 d-block d-lg-none animate__animated animate__fadeIn animate__slow">
                 </div>
-                <ul class="nav justify-content-center justify-content-lg-start">
-                    <li class="nav-item animate__animated animate__slideInRight">
-                        <a class="nav-link links-menu mx-3 ms-lg-0 me-lg-3" aria-current="page" href="#">
-                            <img src="{{ url('/images/elements/kopitu-preneur.png') }}" alt="preneur" class="img-fluid">
-                        </a>
-                    </li>
-                    <li class="nav-item animate__animated animate__slideInRight" style="animation-duration: 1.4s;">
-                        <a class="nav-link links-menu mx-3 ms-lg-0 me-lg-3" aria-current="page" href="#">
-                            <img src="{{ url('/images/elements/keanggotaan.png') }}" alt="preneur" class="img-fluid">
-                        </a>
-                    </li>
-                    <li class="nav-item animate__animated animate__slideInRight" style="animation-duration: 1.8s;">
-                        <a class="nav-link links-menu mx-3 ms-lg-0 me-lg-3" aria-current="page" href="#">
-                            <img src="{{ url('/images/elements/event.png') }}" alt="preneur" class="img-fluid">
-                        </a>
-                    </li>
-                </ul>
+                <div class="col-12 col-lg-6">
+                    <div class="text-center text-lg-start mb-3">
+                        <h2 class="mb-3 fw-bold animate__animated animate__fadeInUp">KOPITU UMKM INDONESIA</h2>
+                        <p class="mb-5 animate__animated animate__fadeInUp animate__fast">KOPITU hadir untuk melakukan
+                            pendampingan dan bantuan kepada UMKM dan UKM untuk
+                            meningkatkan kesejahteraan UMKM dan UKM dalam pasar dalam negeri maupun ekspor dalam bentuk
+                            fasilitasi pelatihan, alih teknologi, pemasaran , bantuan hukum serta penguatan modal usaha
+                            dan
+                            pembiayaan.</p>
+                        <p class="fw-bold text-uppercase animate__animated animate__fadeInUp animate__fast">Yoyok
+                            Pitoyo, Salam KOPITU</p>
+                    </div>
+                    <ul class="nav justify-content-center justify-content-lg-start">
+                        <li class="nav-item animate__animated animate__slideInRight">
+                            <a class="nav-link links-menu mx-3 ms-lg-0 me-lg-3" aria-current="page" href="#">
+                                <img src="{{ url('/images/elements/kopitu-preneur.png') }}" alt="preneur"
+                                    class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="nav-item animate__animated animate__slideInRight" style="animation-duration: 1.4s;">
+                            <a class="nav-link links-menu mx-3 ms-lg-0 me-lg-3" aria-current="page" href="#">
+                                <img src="{{ url('/images/elements/keanggotaan.png') }}" alt="preneur"
+                                    class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="nav-item animate__animated animate__slideInRight" style="animation-duration: 1.8s;">
+                            <a class="nav-link links-menu mx-3 ms-lg-0 me-lg-3" aria-current="page" href="#">
+                                <img src="{{ url('/images/elements/event.png') }}" alt="preneur" class="img-fluid">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-{{-- <div class="position-relative" style="background-color: rgb(240, 240, 240)">
+<div class="position-relative shadow-sm" style="background-color: #007bff10;">
     <div class="container py-5">
         <div class="row g-4">
             <div class="col-12 col-md-6 col-lg-4">
@@ -68,8 +82,8 @@
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="link-actived activists-2 shadow rounded-3 py-3">
                     <div class="d-block lh-sm py-4 ms-3">
-                        <p class="card-title fw-light fs-3 mb-0">VISION</p>
-                        <p class="card-text fw-bold fs-3 mb-4">MISSION</p>
+                        <p class="card-title fw-light fs-3 mb-0">BUSINESS</p>
+                        <p class="card-text fw-bold fs-3 mb-4">INCUBATORS</p>
                         <a href="#" class="stretched-link text-decoration-none">READ MORE</a>
                     </div>
                 </div>
@@ -85,8 +99,12 @@
             </div>
         </div>
     </div>
-</div> --}}
-{{-- <div class="py-4 mb-4">
+</div>
+
+@livewire('pages.index.invitation')
+@livewire('pages.index.news')
+
+<div class="py-4 mb-4">
     <div class="container">
         <div class="d-flex align-items-center mb-4">
             <h4 class="fw-bold">Video Kopitu</h4>
@@ -116,11 +134,7 @@
             <?php endfor;?>
         </div>
     </div>
-</div> --}}
-
-
-@livewire('pages.index.news')
-
+</div>
 @livewire('pages.index.galeri')
 
 

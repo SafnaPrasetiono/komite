@@ -29,7 +29,6 @@
     <link rel="stylesheet" href="{{ url('/dist/style/css/index.css') }}">
     <link rel="stylesheet" href="{{ url('/dist/style/css/animated.css') }}">
     <link rel="stylesheet" href="{{ asset('/dist/owl/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('/dist/videosjs/css/video.min.css') }}">
     <link rel="stylesheet" href="{{ url('/dist/splide/css/splide.min.css') }}">
     @livewireStyles
 </head>
@@ -51,21 +50,18 @@
                     <li class="nav-item">
                         <a class="nav-link link-blue fw-bold" href="{{ route('index') }}">BERANDA</a>
                     </li>
-                    {{-- <li class="nav-item">
-                        <a class="nav-link link-blue fw-bold" href="#">SERVICE</a>
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link link-blue fw-bold" href="#">EVENTS</a>
-                    </li> --}}
+                        <a class="nav-link link-blue fw-bold" href="{{ route('member') }}">KEANGGOTAAN</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link link-blue fw-bold" href="{{ route('news') }}">BERITA</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link link-blue fw-bold" href="{{ route('events') }}">EVENTS</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link link-blue fw-bold" href="{{ route('gallery') }}">GALERI</a>
                     </li>
-                    {{-- <li class="nav-item">
-                        <a class="nav-link link-blue fw-bold" href="{{ route('members') }}">KEANGGOTAAN</a>
-                    </li> --}}
                     <li class="nav-item">
                         <a class="nav-link link-blue fw-bold" href="{{ route('aboutus') }}">TENTANG KAMI</a>
                     </li>
@@ -85,7 +81,13 @@
                     <a class="nav-link link-blue fw-bold" href="{{ route('index') }}">BERANDA</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link link-blue fw-bold" href="{{ route('member') }}">KEANGGOTAAN</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link link-blue fw-bold" href="{{ route('news') }}">BERITA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-blue fw-bold" href="#">EVENT</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link-blue fw-bold" href="{{ route('gallery') }}">GALERI</a>
@@ -102,31 +104,28 @@
     </section>
 
     <footer>
-        <div class="py-5 bg-primary">
-            <div class="container">
+        <div class="py-5" style="background-color: #001777">
+            <div class="container py-4">
                 <div class="row gy-4">
-                    <div class="col-12 col-md-8">
+                    <div class="col-12 col-md-12 col-lg-8">
                         <div class="text-white mb-4">
                             <span class="fw-bold fs-5 fw-bold">Info KerjaJepang</span>
                             <hr class="soft" width="50px">
                             <div class="pe-0 pe-md-5">
-                                {{-- <p>Kerjajepang.com berdiri sejak tahun 2022 dan telah mensupport ratusan siswa/i
-                                    untuk
-                                    sekolah di Jepang. Selain itu, kerjajepang.com juga men-support pemuda/i Indonesia
-                                    yang optimis dan memiliki semangat tinggi untuk  bekerja di Jepang. Kerjajepang.com
-                                    merupakan platform dari PT, LPK dan LKP.  Saat ini kami sedang mempunyai SO (Sending
-                                    Organization) untuk ikut berkontribusi dalam program magang/ jisshuusei.</p> --}}
+                                <p>
+                                    Website ini dibuat untuk memberikan kemudahan kepada umkm kota Denpasar dalam pendaftaraan keanggotaan, Perbantuan dalam mengurus perizinan dan berita terbaru seputar umkm di kota denpasar , Provinsi, Nasional maupun Internasional
+                                </p>
                                 <div class="d-flex mb-2">
                                     <i class="fas fa-phone fa-fw"></i>
                                     <p class="mb-0 ms-2">+62 813-2519-9663</p>
                                 </div>
                                 <div class="d-flex mb-2">
                                     <i class="fas fa-envelope fa-fw"></i>
-                                    <p class="mb-0 ms-2">SEKRETARIAT@KOMITE-UMKM.ORG</p>
+                                    <p class="mb-0 ms-2 text-lowercase">SEKRETARIAT@KOMITE-UMKM.ORG</p>
                                 </div>
                                 <div class="d-flex mb-2">
                                     <i class="fas fa-envelope fa-fw"></i>
-                                    <p class="mb-0 ms-2">KOPITUMEDIA@GMAIL.COM</p>
+                                    <p class="mb-0 ms-2 text-lowercase">KOPITUMEDIA@GMAIL.COM</p>
                                 </div>
                                 <div class="d-flex mb-2">
                                     <i class="fas fa-map-marked fa-fw"></i>
@@ -136,15 +135,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-6 col-lg-2">
                         <div class="text-white">
                             <span class="fw-bold fs-5">Link Terkait</span>
                             <hr class="soft" width="50px">
                             <nav class="nav flex-column">
-                                <a class="nav-link link-light px-0" href="https://balisanitya.com/">Service</a>
-                                <a class="nav-link link-light px-0" href="https://lumbungdeso.id/">Organisasi</a>
-                                <a class="nav-link link-light px-0 active" aria-current="page" href="#">Berita
-                                    Terupdate</a>
+                                <a class="nav-link link-light px-0" href="https://balisanitya.com/">Kopitu Denpasar</a>
+                                <a class="nav-link link-light px-0" href="https://lumbungdeso.id/">Kopitu Preneur</a>
+                                <a class="nav-link link-light px-0 active" aria-current="page" href="#">Kopitu E-Store</a>
+                                <a class="nav-link link-light px-0 active" aria-current="page" href="#">Keanggotaan</a>
+                                <a class="nav-link link-light px-0" href="#">Tentang Kami</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-2">
+                        <div class="text-white">
+                            <span class="fw-bold fs-5">Link Terkait</span>
+                            <hr class="soft" width="50px">
+                            <nav class="nav flex-column">
+                                <a class="nav-link link-light px-0" href="https://balisanitya.com/">Berita Terkini</a>
+                                <a class="nav-link link-light px-0" href="https://lumbungdeso.id/">Syarat Pendaftaran</a>
+                                <a class="nav-link link-light px-0 active" aria-current="page" href="#">Cara Mendaftar</a>
                                 <a class="nav-link link-light px-0" href="#">Tentang Kami</a>
                             </nav>
                         </div>

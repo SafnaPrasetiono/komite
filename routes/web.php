@@ -1,12 +1,16 @@
 <?php
 
+// admins controllers
 use App\Http\Controllers\admin\bannersAdmin;
 use App\Http\Controllers\admin\galeryAdmin;
 use App\Http\Controllers\admin\indexAdmin;
 use App\Http\Controllers\admin\newsAdmin;
 use App\Http\Controllers\auth\authAdmin;
+// pages cotrollers
+use App\Http\Controllers\pages\eventController;
 use App\Http\Controllers\pages\galleryController;
 use App\Http\Controllers\pages\indexController;
+use App\Http\Controllers\pages\memberController;
 use App\Http\Controllers\pages\newsController;
 use Illuminate\Support\Facades\Route;
 
@@ -31,8 +35,11 @@ Route::get('/beranda', [indexController::class, 'index'])->name('home');
 Route::get('/beranda/berita', [newsController::class, 'index'])->name('news');
 Route::get('/beranda/galeri', [galleryController::class, 'index'])->name('gallery');
 Route::get('/beranda/berita/{slug}', [newsController::class, 'detail'])->name('news.detail');
-Route::get('/beranda/keanggotaan', [indexController::class, 'members'])->name('members');
+Route::get('/beranda/keanggotaan', [memberController::class, 'index'])->name('member');
 Route::get('/beranda/tentang-kami', [indexController::class, 'aboutus'])->name('aboutus');
+// Events Routing
+Route::get('/beranda/event', [eventController::class, 'index'])->name('events');
+Route::get('/beranda/event/{slug}', [eventController::class, 'detail'])->name('events.detail');
 
 
 // router for admins
@@ -48,8 +55,19 @@ Route::group(['prefix' => 'admin',  'middleware' => 'auth:admin'], function () {
     Route::get('/news/edit/{id}', [newsAdmin::class, 'edit'])->name('admin.news.edit');
     Route::put('/news/update/{id}', [newsAdmin::class, 'update'])->name('admin.news.update');
     Route::get('/news/upload/editore', [newsAdmin::class, 'editor'])->name('admin.news.upload.editor');
+
+    // Routing Events
+    Route::get('/events', [eventAdmin::class, 'index'])->name('admin.events');
+    Route::get('/events/buat', [eventAdmin::class, 'create'])->name('admin.events.create');
+    Route::post('/events/buat/store', [eventAdmin::class, 'store'])->name('admin.events.create.store');
+    Route::get('/events/ubah/{id}', [eventAdmin::class, 'edit'])->name('admin.events.edit');
+    Route::put('/events/perbarui/{id}', [eventAdmin::class, 'update'])->name('admin.events.update');
+    Route::put('/events/detail/{id}', [eventAdmin::class, 'show'])->name('admin.events.detail');
+    Route::get('/events/upload/editore', [eventAdmin::class, 'editor'])->name('admin.events.upload.editor');
+    
     // uploads banner routing
     Route::get('/banners', [bannersAdmin::class, 'index'])->name('admin.banners');
+    
     // galery admin routing
     Route::get('/galeri', [galeryAdmin::class, 'index'])->name('admin.gallery');
     Route::get('/galeri/create', [galeryAdmin::class, 'create'])->name('admin.gallery.create');

@@ -109,7 +109,7 @@
                         <i class="fas fa-user box-icon" aria-hidden="true"></i>Profile
                     </a>
                     <hr class="soft my-1 bg-white">
-                    <a class="nav-link d-flex align-items-center px-3" href="#loker" type="button"
+                    {{-- <a class="nav-link d-flex align-items-center px-3" href="#loker" type="button"
                         data-bs-toggle="collapse" data-bs-target="#loker" aria-expanded="true" aria-controls="loker">
                         <i class="fas fa-briefcase box-icon fa-fw"></i>Loker <i class="fas fa-angle-down ms-auto"></i>
                     </a>
@@ -120,8 +120,8 @@
                         <a class="nav-link ps-4" href="#">
                             <i class="far fa-user-hard-hat box-icon fa-fw"></i>Bursa Kerja
                         </a>
-                    </div>
-                    <a class="nav-link px-3" href="#">
+                    </div> --}}
+                    <a class="nav-link px-3" href="{{ route('admin.events') }}">
                         <i class="far fa-backpack box-icon fa-fw"></i>Events
                     </a>
                     <hr class="soft my-1 bg-white">

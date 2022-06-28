@@ -24,7 +24,7 @@
 </div>
 <div class="alert-secondary py-5">
     <div class="container">
-        <h1 class="mb-4">KOMITE PENGUSAHA MIKRO KECIL MENENGAH INDONESIA BERSATU (KOPITU)</h1>
+        <h3 class="mb-4 fw-bold text-uppercase">Sejarah KOPITU</h3>
         <p>Peran Usaha Mikro Kecil dan Menengah (UMKM) atau Usaha Kecil Menengah (UKM) dalam pertumbuhan perekonomian suatu negara dinilai penting. UMKM memiliki kontribusi besar dan krusial bagi perekonomian Indonesia. Kriteria UMKM Menurut Undang-undang Nomor 20 Tahun 2008 tentang Usaha Mikro, Kecil dan Menengah (UMKM) usaha kecil didefinisikan sebagai kegiatan ekonomi produktif yang berdiri sendiri.</p>
         <p>Usaha ini dilakukan perorangan atau badan usaha yang bukan merupakan anak perusahaan atau bukan cabang perusahaan yang dimiliki, dikuasai atau menjadi bagian baik langsung maupun tidak langsung dari usaha menengah atau usaha besar serta memenuhi kriteria lain. Dalam UU tersebut juga dijelaskan perbedaan kriteria UMKM dengan Usaha Besar.</p>
         <ol>
@@ -49,26 +49,35 @@
 
 <div class="py-5">
     <div class="container">
-        <div class="row justify-content-center align-items-center mb-4">
-            <div class="col-10 col-md-8 col-lg-5">
-                <img src="{{ url('/images/elements/about-logo.png') }}" alt="about-logo" class="img-fluid">
-            </div>
-            <div class="col-12 col-lg-7">
-                <h1 class="fw-bold">FILOSOFI LOGO KOPITU</h1>
-                <ul class="px-3">
-                    <li><span class="fw-bold">Bola Dunia Warna Biru</span>, Melambangkan UMKM Indonesia memiliki tujuan untuk Go Internasional dengan melakukan kegiatan ekspor hasil produksi dalam negeri.</li>
-                    <li>
-                        <span class="fw-bold">Lingkaran Bentuk Orang Bergandengan Mengelilingi Bola Bunia</span>, Melambangkan bahwa pelaku dan atau penggiat UMKM Indonesia bergotong royong saling mendukung dan bersinergi untuk tujuan ekspor hasil produksi dalam negeri.
-                    </li>
-                    <li>
-                        <span class="fw-bold">Warna-warni Lingkaran Bentuk Orang Mengelilingi Bola Dunia</span>, melambangkan bahwa pelaku/penggiat UMKM Indonesia terdiri dari berbagai bidang hasil produksi seperti nelayan, petani, perkebunan, pengrajin, petambak, dan lain sebagainya dan dari berbagai suku bangsa di Indonesia yang ber-Bhineka Tunggal Ika. 
-                    </li>
-                    <li>
-                        <span class="fw-bold">Dua Telapak Tangan Berdampingan</span>, Melambangkan bahwa KOPITU merupakan suatu wadah bagi pelaku/penggiat UMKM yang akan memberikan dukungan dan bimbingan dalam kegiatan lokal maupun ekspor dengan sepenuh hati dan sekuat tenaga.
-                    </li>
-                </ul>
+        <div class="d-none d-md-block">
+            <img src="{{ url('/images/elements/about-logo.png') }}" alt="" class="img-fluid">
+        </div>
+        <div class="d-block d-md-none">
+            <div class="row justify-content-center align-items-center mb-4">
+                <div class="col-10 col-md-8 col-lg-5">
+                    <img src="{{ url('/images/elements/about-logo-just.png') }}" alt="about-logo" class="img-fluid">
+                </div>
+                <div class="col-12 col-lg-7">
+                    <h1 class="fw-bold">FILOSOFI LOGO KOPITU</h1>
+                    <ul class="px-3">
+                        <li><span class="fw-bold">Bola Dunia Warna Biru</span>, Melambangkan UMKM Indonesia memiliki tujuan untuk Go Internasional dengan melakukan kegiatan ekspor hasil produksi dalam negeri.</li>
+                        <li>
+                            <span class="fw-bold">Lingkaran Bentuk Orang Bergandengan Mengelilingi Bola Bunia</span>, Melambangkan bahwa pelaku dan atau penggiat UMKM Indonesia bergotong royong saling mendukung dan bersinergi untuk tujuan ekspor hasil produksi dalam negeri.
+                        </li>
+                        <li>
+                            <span class="fw-bold">Warna-warni Lingkaran Bentuk Orang Mengelilingi Bola Dunia</span>, melambangkan bahwa pelaku/penggiat UMKM Indonesia terdiri dari berbagai bidang hasil produksi seperti nelayan, petani, perkebunan, pengrajin, petambak, dan lain sebagainya dan dari berbagai suku bangsa di Indonesia yang ber-Bhineka Tunggal Ika. 
+                        </li>
+                        <li>
+                            <span class="fw-bold">Dua Telapak Tangan Berdampingan</span>, Melambangkan bahwa KOPITU merupakan suatu wadah bagi pelaku/penggiat UMKM yang akan memberikan dukungan dan bimbingan dalam kegiatan lokal maupun ekspor dengan sepenuh hati dan sekuat tenaga.
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+    </div>
+</div>
+<div class="py-5">
+    <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-12 col-lg-7 order-2 order-lg-1">
                 <h1 class="fw-bold">FILOSOFI SEGITIGA KOPITU</h1>
