@@ -109,11 +109,11 @@
                 <div class="row gy-4">
                     <div class="col-12 col-md-12 col-lg-8">
                         <div class="text-white mb-4">
-                            <span class="fw-bold fs-5 fw-bold">Info KerjaJepang</span>
+                            <span class="fw-bold fs-5 fw-bold">Info Kopitu</span>
                             <hr class="soft" width="50px">
                             <div class="pe-0 pe-md-5">
                                 <p>
-                                    Website ini dibuat untuk memberikan kemudahan kepada umkm kota Denpasar dalam pendaftaraan keanggotaan, Perbantuan dalam mengurus perizinan dan berita terbaru seputar umkm di kota denpasar , Provinsi, Nasional maupun Internasional
+                                    Website ini dibuat untuk memberikan kemudahan kepada umkm dan umk dalam pendaftaraan keanggotaan, memberikan informasi evetns, bantuan dalam mengurus perizinan dan berita terbaru seputar umkm, Provinsi, Nasional maupun Internasional
                                 </p>
                                 <div class="d-flex mb-2">
                                     <i class="fas fa-phone fa-fw"></i>
