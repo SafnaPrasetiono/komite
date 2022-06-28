@@ -17,6 +17,7 @@ class mediaAdmin extends Controller
 
     public function galleryPost(Request $request)
     {
+
         $validator = Validator::make($request->all(), [
             'images.*'  => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:5120'
         ], [
@@ -38,10 +39,10 @@ class mediaAdmin extends Controller
                 $newImagesNames = "BNR-" . substr(md5($originName . date("YmdHis")), 0, 28) . '.' . $extension;
 
                 galleries::create([
-                    'label' => $originName,
+                    'name_galleries' => $originName,
                     'size' => $size,
                     'extension' => $extension,
-                    'images' => $newImagesNames,
+                    'location' => $newImagesNames,
                 ]);
                 $resorces->storeAs('/images/galleries/',  $newImagesNames, 'myLocal');
             }

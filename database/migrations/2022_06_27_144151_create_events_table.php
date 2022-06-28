@@ -20,6 +20,7 @@ return new class extends Migration
             $table->timestamp('schedule');
             $table->date('date_start');
             $table->date('date_end');
+            $table->integer('kuota');
             $table->text('description');
             $table->text('content');
             $table->string('images');

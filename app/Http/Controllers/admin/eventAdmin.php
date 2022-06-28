@@ -33,6 +33,7 @@ class eventAdmin extends Controller
             'times'      => 'required',
             'date_start'      => 'required',
             'date_end'      => 'required',
+            'kuota'      => 'required',
             'description'  => 'required',
             'content'      => 'required',
             'images'       => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
@@ -43,6 +44,7 @@ class eventAdmin extends Controller
             'times.required'        => 'Please input time schedule',
             'date_start.required'   => 'Please input date events',
             'date_end.required'     => 'Please input end date events',
+            'kuota.required'        => 'Please input kuota events',
             'description.required'  => 'Please input field description events',
             'content.required'      => 'Please input field content events',
             'images.required'       => 'Please upload images',
@@ -70,6 +72,7 @@ class eventAdmin extends Controller
             $data->schedule = $schedule;
             $data->date_start = $request->date_start;
             $data->date_end = $request->date_end;
+            $data->kuota = $request->kuota;
             $data->description = $request->description;
             $data->content = $request->content;
             $data->images = $namasamplefoto;

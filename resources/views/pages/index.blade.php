@@ -105,7 +105,7 @@
 @livewire('pages.index.news')
 @livewire('pages.index.events')
 
-<div class="py-4 mb-4">
+{{-- <div class="py-4 mb-4">
     <div class="container">
         <div class="d-flex align-items-center mb-4">
             <h4 class="fw-bold">Video Kopitu</h4>
@@ -135,7 +135,7 @@
             <?php endfor;?>
         </div>
     </div>
-</div>
+</div> --}}
 @livewire('pages.index.galeri')
 
 

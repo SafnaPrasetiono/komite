@@ -234,4 +234,8 @@
     .ratio-3x4{
         width: 100%;
     }
+
+    .img-events{
+        height: 360px;
+    }
 }

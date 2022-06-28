@@ -207,7 +207,8 @@
     <script src="{{ url('/dist/style/js/alert.js') }}"></script>
     <script src="{{ url('/dist/style/js/index.js') }}"></script>
     <script src="{{ asset('/dist/owl/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('/dist/videosjs/js/video.min.js') }}"></script>
+    {{-- <script src="{{ asset('/dist/videosjs/js/video.min.js') }}"></script> --}}
+    <script src="{{ asset('/dist/splide/js/splide.min.js') }}"></script>
     @livewireScripts
     @yield('script')
     @if(session()->has('success'))

@@ -45,7 +45,7 @@
                 <div class="d-block mb-4">
                     <label for="jadwal" class="form-label">Jadwal Acara</label>
                     <div class="row gy-0 gx-3">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-4">
                             <input name="dates" type="date"
                                 class="form-control @error('dates') is-invalid @enderror"
                                 value="{{ old('dates') }}">
@@ -55,11 +55,19 @@
                             </div>
                             @enderror
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-4">
                             <input name="times" type="time"
                                 class="form-control @error('times') is-invalid @enderror"
                                 value="{{ old('times') }}">
                             @error('times')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <input wire:model='kuota' type="number" name="kuota" class="form-control @error('kuota') is-invalid @enderror" id="kuota" placeholder="Kuota Pendaftaran">
+                            @error('kuota')
                             <div class="invalid-feedback">
                                 {{ $message }}
                             </div>

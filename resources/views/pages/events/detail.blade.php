@@ -72,7 +72,7 @@
                     <i class="fas fa-users fa-4x fa-fw mb-3"></i>
                     <div class="py-2">
                         <p class="mb-0">Kuota Pendaftaran</p>
-                        <p class="fw-bold">100 orang</p>
+                        <p class="fw-bold">{{ $data->kuota }} orang</p>
                     </div>
                 </div>
             </div>
