@@ -66,7 +66,7 @@
             </div>
             <div class="col-12 col-lg-6">
                 <div class="text-center text-lg-start mb-3">
-                    <h2 class="mb-3 fw-bold animate__animated animate__fadeInUp">KOPITU UMKM INDONESIA</h2>
+                    <h2 class="mb-3 fw-bold animate__animated animate__fadeInUp">UKM Juara di Negeri Sendiri & Mendunia</h2>
                     <p class="mb-4 animate__animated animate__fadeInUp animate__fast">
                         Masa pandemi sudah hampir kita lalui, para pelaku UMKM maupun Koperasi diharapkan untuk
                         terus bersemangat dan survive menghadapi gejolak ekonomi dampak dari Pandemi Covid-19. Besar
