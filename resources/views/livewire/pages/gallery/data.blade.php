@@ -39,6 +39,7 @@
                 </div>
                 <div class="p-3 mt-4">
                     <p class="fs-5 fw-bold text-capitalize mb-1">{{ $item->title }}</p>
+                    <p>{{ $item->locations }}, {{ $item->venue }}</p>
                     <p class="mb-0 text-dark-blue">
                         <?php echo $item->description ?>
                     </p>
