@@ -61,7 +61,7 @@
                         <a class="nav-link link-blue fw-bold" href="{{ route('events') }}">EVENTS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-blue fw-bold" href="{{ route('gallery') }}">GALERI</a>
+                        <a class="nav-link link-blue fw-bold" href="{{ route('gallery') }}">KALEIDOSKOP GALERI</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link link-blue fw-bold" href="{{ route('aboutus') }}">TENTANG KAMI</a>
