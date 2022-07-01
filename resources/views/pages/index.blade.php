@@ -98,14 +98,14 @@
                     </li>
                     <li class="nav-item animate__animated animate__slideInRight" style="animation-duration: 1.4s;">
                         <a class="nav-link links-menu mx-3 ms-lg-0 me-lg-3" aria-current="page" href="#">
-                            <img src="{{ url('/images/elements/keanggotaan.png') }}" alt="preneur" class="img-fluid">
+                            <img src="{{ url('/images/elements/bisnis-inkubator.png') }}" alt="preneur" class="img-fluid">
                         </a>
                     </li>
-                    <li class="nav-item animate__animated animate__slideInRight" style="animation-duration: 1.8s;">
+                    {{-- <li class="nav-item animate__animated animate__slideInRight" style="animation-duration: 1.8s;">
                         <a class="nav-link links-menu mx-3 ms-lg-0 me-lg-3" aria-current="page" href="#">
                             <img src="{{ url('/images/elements/event.png') }}" alt="preneur" class="img-fluid">
                         </a>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
         </div>
