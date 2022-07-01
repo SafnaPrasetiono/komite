@@ -6,7 +6,7 @@
                     <i class="fas fa-newspaper fa-2x fa-fw"></i>
                     <h4 class="fw-bold ms-3">Berita KOPITU</h4>
                 </div>
-                <a href="#" class="btn btn-outline-primary rounded-pill py-1 ms-auto news-botton opacity-0">
+                <a href="{{ route('news') }}" class="btn btn-outline-primary rounded-pill py-1 ms-auto news-botton opacity-0">
                     Semua <i class="fas fa-angle-right fa-sm fa-fw"></i>
                 </a>
             </div>
