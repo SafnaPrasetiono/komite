@@ -2,7 +2,7 @@
 
 @section('head')
 <title>Mitra Strategis – Komite Pengusaha Mikro Kecil Menengah Indonesia Bersatu</title>
-<link rel="stylesheet" href="{{ url('/dist/style/css/pages/index.css') }}">
+<link rel="stylesheet" href="{{ url('/assets/dist/css/pages/index.css') }}">
 <style>
     .box-banners {
         display: block;
@@ -87,22 +87,24 @@
                         Pemerintah, Swasta, Lembaga-lembaga maupun Individu untuk berkolaborasi membangun UMKM
                         Indonesia agar UMKM dapat Juara di Negeri sendiri dan Mendunia.
                     </p>
-                    <p class="fw-bold text-uppercase animate__animated animate__fadeInUp animate__fast">Yoyok
-                        Pitoyo, Salam KOPITU</p>
+                    <p class="fw-bold text-uppercase animate__animated animate__fadeInUp animate__fast">
+                        Salam KOPITU, <br>
+                        Yoyok Pitoyo
+                    </p>
                 </div>
                 <ul class="nav justify-content-center justify-content-lg-start">
                     <li class="nav-item animate__animated animate__slideInRight">
-                        <a class="nav-link links-menu mx-3 ms-lg-0 me-lg-3" aria-current="page" href="#">
-                            <img src="{{ url('/images/elements/kopitu-preneur.png') }}" alt="preneur" class="img-fluid">
+                        <a class="nav-link links-menu p-0 mx-2 ms-lg-0 me-lg-3" aria-current="page" href="#">
+                            <img src="{{ url('/images/elements/kopitu-preneur.png') }}" alt="preneur" class="img-fluid" width="84px" height="84px">
                         </a>
                     </li>
                     <li class="nav-item animate__animated animate__slideInRight" style="animation-duration: 1.4s;">
-                        <a class="nav-link links-menu mx-3 ms-lg-0 me-lg-3" aria-current="page" href="#">
-                            <img src="{{ url('/images/elements/bisnis-inkubator.png') }}" alt="preneur" class="img-fluid">
+                        <a class="nav-link links-menu p-0 mx-2 ms-lg-0 me-lg-3" aria-current="page" href="#">
+                            <img src="{{ url('/images/elements/bisnis-inkubator.png') }}" alt="preneur" class="img-fluid" width="84px" height="84px">
                         </a>
                     </li>
                     {{-- <li class="nav-item animate__animated animate__slideInRight" style="animation-duration: 1.8s;">
-                        <a class="nav-link links-menu mx-3 ms-lg-0 me-lg-3" aria-current="page" href="#">
+                        <a class="nav-link links-menu p-0 mx-2 ms-lg-0 me-lg-3" aria-current="page" href="#">
                             <img src="{{ url('/images/elements/event.png') }}" alt="preneur" class="img-fluid">
                         </a>
                     </li> --}}
@@ -116,7 +118,7 @@
     <div class="container py-5">
         <div class="row g-4">
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="link-actived activists-1 shadow rounded-3 py-3">
+                <div class="link-actived activists-1 shadow rounded-3 py-3" style="background-image: url('/images/banner/activists_bg-1.jpg');">
                     <div class="d-block lh-sm py-4 ms-3">
                         <p class="card-title fw-light fs-3 mb-0">TENTANG</p>
                         <p class="card-text fw-bold fs-3 mb-4">KOPITU</p>
@@ -125,7 +127,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="link-actived activists-2 shadow rounded-3 py-3">
+                <div class="link-actived activists-2 shadow rounded-3 py-3" style="background-image: url('/images/banner/activists_bg-2.jpg');">
                     <div class="d-block lh-sm py-4 ms-3">
                         <p class="card-title fw-light fs-3 mb-0">BUSINESS</p>
                         <p class="card-text fw-bold fs-3 mb-4">INCUBATORS</p>
@@ -134,7 +136,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <div class="link-actived activists-3 shadow rounded-3 py-3">
+                <div class="link-actived activists-3 shadow rounded-3 py-3" style="background-image: url('/images/banner/activists_bg-3.jpg')">
                     <div class="d-block lh-sm py-4 ms-3">
                         <p class="card-title fw-light fs-3 mb-0">OUR</p>
                         <p class="card-text fw-bold fs-3 mb-4">PROGRAMS</p>

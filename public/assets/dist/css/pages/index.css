@@ -3,6 +3,19 @@
     margin-top: 3rem;
 }
 
+.link-actived{
+    display: flex;
+    position: relative;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.link-actived:hover{
+    transition: 0.8s;
+    background-size: 160%;
+}
+
 .background-left {
     position: absolute;
     width: 500px;
@@ -73,5 +86,6 @@
     .background-right{
         top: auto;
         bottom: 50px;
+        z-index: -1;
     }
 }

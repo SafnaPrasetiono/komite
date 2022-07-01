@@ -3,6 +3,9 @@
 @section('head')
 <title>Komite UMKM - Daftar acara komite umkm</title>
 <style>
+    .img-events{
+        height: 100%;
+    }
     .img-banners {
         width: 100%;
         height: 100%;

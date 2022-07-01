@@ -32,7 +32,7 @@
 
 @section('pages')
 <div style="height: 70px;"></div>
-<div class="py-5" style="background-color: #001777;">
+<div class="bg-theme-custom py-5">
     <div class="container">
         <h3 class="fw-bold text-white">Form Pendaftaran Anggota</h3>
         <ol class="breadcrumb mb-0">

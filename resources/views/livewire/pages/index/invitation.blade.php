@@ -41,8 +41,8 @@
         </div>
     </div>
 
-    <script src="{{ url('/dist/style/js/jquery.js') }}"></script>
     <script>
+         document.addEventListener('DOMContentLoaded', function() {
         $(window).scroll(() => {
             var wScroller = $(this).scrollTop();
             if (wScroller > $('.invitation-1').offset().top - 400) {
@@ -56,5 +56,6 @@
                 $('.ei-2').addClass('animate__animated animate__fadeInLeft');
             }
         });
+    });
     </script>
 </div>

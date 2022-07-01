@@ -37,7 +37,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [indexController::class, 'index'])->name('index');
 Route::get('/beranda', [indexController::class, 'index'])->name('home');
 Route::get('/beranda/berita', [newsController::class, 'index'])->name('news');
-Route::get('/beranda/galeri', [galleryController::class, 'index'])->name('gallery');
+Route::get('/beranda/kaleidoskop', [galleryController::class, 'index'])->name('gallery');
 Route::get('/beranda/berita/{slug}', [newsController::class, 'detail'])->name('news.detail');
 Route::get('/beranda/keanggotaan', [memberController::class, 'index'])->name('member');
 Route::get('/beranda/keanggotaan/daftar', [memberController::class, 'register'])->name('member.register');

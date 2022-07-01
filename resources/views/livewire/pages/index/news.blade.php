@@ -6,7 +6,8 @@
                     <i class="fas fa-newspaper fa-2x fa-fw"></i>
                     <h4 class="fw-bold ms-3">Berita KOPITU</h4>
                 </div>
-                <a href="{{ route('news') }}" class="btn btn-outline-primary rounded-pill py-1 ms-auto news-botton opacity-0">
+                <a href="{{ route('news') }}"
+                    class="btn btn-outline-primary rounded-pill py-1 ms-auto news-botton opacity-0">
                     Semua <i class="fas fa-angle-right fa-sm fa-fw"></i>
                 </a>
             </div>
@@ -14,20 +15,24 @@
                 @foreach ($data as $item)
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="box-news card border opacity-0">
-                        <div class="btn-images-news ratio ratio-16x9" style="background-image: url('/images/news/{{$item->images}}')">
-                        {{-- <img src="{{ url('/images/news/' . $item->images) }}"
-                            class="img-news-banners" alt="{{ $item->images }}"> --}}
+                        <div class="btn-images-news ratio ratio-16x9"
+                            style="background-image: url('/images/news/{{$item->images}}')">
+                            {{-- <img src="{{ url('/images/news/' . $item->images) }}" class="img-news-banners"
+                                alt="{{ $item->images }}"> --}}
                         </div>
                         <div class="card-body">
-                            <a href="{{ route('news.detail', ['slug' => $item->slug, 'id' => $item->id_news ]) }}" class="card-title fs-5 fw-bold text-ellipsis-2 text-decoration-none mb-1">
+                            <a href="{{ route('news.detail', ['slug' => $item->slug, 'id' => $item->id_news ]) }}"
+                                class="card-title fs-5 fw-bold text-ellipsis-2 text-decoration-none mb-1">
                                 {{ $item->title }}
                             </a>
-                            <small class="d-block text-secondary mb-3">Berita, {{ date('d F Y', strtotime($item->created_at) )
+                            <small class="d-block text-secondary mb-3">Berita, {{ date('d F Y',
+                                strtotime($item->created_at) )
                                 }}</small>
                             <p class="card-text text-ellipsis-4">
                                 {{ $item->description }}
                             </p>
-                            <a href="{{ route('news.detail', ['slug' => $item->slug, 'id' => $item->id_news ]) }}" class="btn link-primary px-0">Lihat detail <i
+                            <a href="{{ route('news.detail', ['slug' => $item->slug, 'id' => $item->id_news ]) }}"
+                                class="btn link-primary px-0">Lihat detail <i
                                     class="fas fa-arrow-right fa-sm fa-fw"></i> </a>
                         </div>
                     </div>
@@ -39,6 +44,7 @@
 
     <script src="{{ url('/dist/style/js/jquery.js') }}"></script>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
         $(window).scroll(() => {
             var wScroller = $(this).scrollTop();
             if (wScroller > $('.news-content').offset().top - 400) {
@@ -55,5 +61,6 @@
                 });
             }
         });
+    });
     </script>
 </div>

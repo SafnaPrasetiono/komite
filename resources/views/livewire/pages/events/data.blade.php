@@ -7,7 +7,7 @@
     <div class="d-block">
         @foreach ($data as $item)
         <div class="card flex-columnt flex-md-row overflow-hidden mb-3">
-            <div class="ratio ratio-3x4">
+            <div class="col-12 col-md-4 col-lg-3">
                 <div class="img-events" style="background-image: url('/images/events/{{ $item->images }}')">
                 </div>
             </div>

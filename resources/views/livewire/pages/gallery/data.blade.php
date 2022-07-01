@@ -1,12 +1,12 @@
 <div>
-    <div class="py-5" style="background-color: #001777;">
+    <div class="bg-theme-custom py-5">
         <div class="container">
             <div class="d-flex flex-column flex-lg-row align-items-lg-center">
                 <div class="mb-3 mb-lg-0">
-                    <h3 class="fw-bold text-white">GALERI KOPITU</h3>
+                    <h3 class="fw-bold text-white">KALEIDOSKOP GALERI</h3>
                     <ol class="breadcrumb mb-0">
                         <li class="breadcrumb-item text-light"><a href="#" class="link-light">Beranda</a></li>
-                        <li class="breadcrumb-item text-light active" aria-current="page">Galeri</li>
+                        <li class="breadcrumb-item text-light active" aria-current="page">Kaleidoskop</li>
                     </ol>
                 </div>
                 <div class="d-block position-relative ms-lg-auto">

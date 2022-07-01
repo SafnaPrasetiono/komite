@@ -24,13 +24,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="{{ url('/dist/app/css/app.css') }}">
-    <link rel="stylesheet" href="{{ url('/dist/icons/css/all.css') }}">
-    <link rel="stylesheet" href="{{ url('/dist/style/css/index.css') }}">
-    <link rel="stylesheet" href="{{ url('/dist/style/css/animated.css') }}">
-    <link rel="stylesheet" href="{{ asset('/dist/owl/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ url('/dist/splide/css/splide.min.css') }}">
-    <link rel="stylesheet" href="{{ url('/assets/dist/css/pages/index.css') }}">
+
+    <link rel="stylesheet" href="{{ url('/assets/app/css/app.css') }}">
+    <link rel="stylesheet" href="{{ url('/assets/icons/css/all.css') }}">
+    <link rel="stylesheet" href="{{ url('/assets/dist/css/color.css') }}">
+    <link rel="stylesheet" href="{{ url('/assets/dist/css/index.css') }}">
+    <link rel="stylesheet" href="{{ url('/assets/dist/css/animated.css') }}">
+    <link rel="stylesheet" href="{{ url('/assets/splide/css/splide.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/owl/css/owl.carousel.min.css') }}">
+
     @livewireStyles
 </head>
 
@@ -88,10 +90,10 @@
                     <a class="nav-link link-blue fw-bold" href="{{ route('news') }}">BERITA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link-blue fw-bold" href="#">EVENT</a>
+                    <a class="nav-link link-blue fw-bold" href="{{ route('events') }}">EVENT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link-blue fw-bold" href="{{ route('gallery') }}">GALERI</a>
+                    <a class="nav-link link-blue fw-bold" href="{{ route('gallery') }}">KALEIDOSKOP GALERI</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link-blue fw-bold" href="{{ route('aboutus') }}">TENTANG KAMI</a>
@@ -105,7 +107,7 @@
     </section>
 
     <footer>
-        <div class="py-5" style="background-color: #001777">
+        <div class="bg-theme-custom py-5">
             <div class="container py-4">
                 <div class="row gy-4">
                     <div class="col-12 col-md-12 col-lg-8">
@@ -114,7 +116,9 @@
                             <hr class="soft" width="50px">
                             <div class="pe-0 pe-md-5">
                                 <p>
-                                    Website ini dibuat untuk memberikan kemudahan kepada umkm dan umk dalam pendaftaraan keanggotaan, memberikan informasi evetns, bantuan dalam mengurus perizinan dan berita terbaru seputar umkm, Provinsi, Nasional maupun Internasional
+                                    Website ini dibuat untuk memberikan kemudahan kepada umkm dan umk dalam pendaftaraan
+                                    keanggotaan, memberikan informasi evetns, bantuan dalam mengurus perizinan dan
+                                    berita terbaru seputar umkm, Provinsi, Nasional maupun Internasional
                                 </p>
                                 <div class="d-flex mb-2">
                                     <i class="fas fa-phone fa-fw"></i>
@@ -143,7 +147,8 @@
                             <nav class="nav flex-column">
                                 <a class="nav-link link-light px-0" href="https://balisanitya.com/">Kopitu Denpasar</a>
                                 <a class="nav-link link-light px-0" href="https://lumbungdeso.id/">Kopitu Preneur</a>
-                                <a class="nav-link link-light px-0 active" aria-current="page" href="#">Kopitu E-Store</a>
+                                <a class="nav-link link-light px-0 active" aria-current="page" href="#">Kopitu
+                                    E-Store</a>
                                 <a class="nav-link link-light px-0 active" aria-current="page" href="#">Keanggotaan</a>
                             </nav>
                         </div>
@@ -154,8 +159,10 @@
                             <hr class="soft" width="50px">
                             <nav class="nav flex-column">
                                 <a class="nav-link link-light px-0" href="https://balisanitya.com/">Berita Terkini</a>
-                                <a class="nav-link link-light px-0" href="https://lumbungdeso.id/">Syarat Pendaftaran</a>
-                                <a class="nav-link link-light px-0 active" aria-current="page" href="#">Cara Mendaftar</a>
+                                <a class="nav-link link-light px-0" href="https://lumbungdeso.id/">Syarat
+                                    Pendaftaran</a>
+                                <a class="nav-link link-light px-0 active" aria-current="page" href="#">Cara
+                                    Mendaftar</a>
                                 <a class="nav-link link-light px-0" href="#">Tentang Kami</a>
                             </nav>
                         </div>
@@ -201,24 +208,22 @@
         </div>
     </footer>
 
-    <script src="{{ url('/dist/style/js/jquery.js') }}"></script>
-    <script src="{{ url('/dist/style/js/popper.js') }}"></script>
-    <script src="{{ url('/dist/app/js/app.js') }}"></script>
-    <script src="{{ url('/dist/style/js/alert.js') }}"></script>
-    <script src="{{ url('/dist/style/js/index.js') }}"></script>
-    <script src="{{ asset('/dist/owl/owl.carousel.min.js') }}"></script>
-    {{-- <script src="{{ asset('/dist/videosjs/js/video.min.js') }}"></script> --}}
-    <script src="{{ asset('/dist/splide/js/splide.min.js') }}"></script>
+    <script src="{{ url('/assets/dist/js/jquery.js') }}"></script>
+    <script src="{{ url('/assets/dist/js/popper.js') }}"></script>
+    <script src="{{ url('/assets/app/js/app.js') }}"></script>
+    <script src="{{ url('/assets/dist/js/alert.js') }}"></script>
+    <script src="{{ url('/assets/dist/js/index.js') }}"></script>
+    <script src="{{ asset('/assets/owl/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('/assets/splide/js/splide.min.js') }}"></script>
     @livewireScripts
     @yield('script')
+
     @if(session()->has('success'))
     <script>
         Swal.fire({
             icon: 'success',
             title: 'Good Jobs!',
             text: '{{ session()->get("success") }}',
-            showConfirmButton: false,
-            timer: 2500
         })
     </script>
     @elseif(session()->has('error'))
@@ -227,8 +232,6 @@
             icon: 'error',
             title: 'Opps...!',
             text: '{{ session()->get("error") }}',
-            showConfirmButton: false,
-            timer: 2500
         })
     </script>
     @endif

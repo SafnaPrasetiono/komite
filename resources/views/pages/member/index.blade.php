@@ -35,8 +35,8 @@
 <div class="alert-info pt-5 pb-4">
     <div class="container pt-3 pb-4">
         <div class="d-block mb-3">
-            <h4 class="fw-bold">Keanggotaan Terbaik</h4>
-            <p class="mb-0 text-secondary">Berikut ini merupakan member terbaik KOPITU</p>
+            <h4 class="fw-bold">Keanggotaan KOPITU</h4>
+            <p class="mb-0 text-secondary">Berikut ini merupakan anggota KOPITU</p>
         </div>
         <div class="d-block mb-3">
             <section class="splide" aria-label="banners sliders">

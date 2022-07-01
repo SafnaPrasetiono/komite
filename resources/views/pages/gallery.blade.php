@@ -1,7 +1,7 @@
 @extends('layouts.panel')
 
 @section('head')
-<title>Komite UMKM - Galeri Data</title>
+<title>Komite UMKM - Kaleidoskop Galeri</title>
 <style>
 
     .gallery-date{
@@ -11,7 +11,7 @@
         margin-top: -25px;
         justify-items: center;
         align-items: center;
-        background-color: #001777;
+        background-color: #0d6efd;
         margin-right: 1rem;
         margin-left: 1rem;
         color: white;
@@ -42,7 +42,7 @@
         .gallery-date{
             margin-left: 1rem;
             background-color: #fff;
-            color: #001777!important;
+            color: #0d6efd!important;
             border: 1px solid #0002;
             font-weight: bold;
         }

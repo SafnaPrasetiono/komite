@@ -2,16 +2,16 @@
 
 @section('head')
 <title>kopitu - berita terkini kopitu</title>
-<link rel="stylesheet" href="{{ url('/dist/style/css/pages/news.css') }}">
+<link rel="stylesheet" href="{{ url('/assets/dist/css/pages/news.css') }}">
 @endsection
 
 @section('pages')
 <div style="height: 75px;"></div>
-<div class="blue-sky py-5">
+<div class="bg-theme-custom py-5">
     <div class="container">
         <div class="d-flex flex-column flex-lg-row align-items-lg-center">
             <div class="mb-3 mb-lg-0">
-                <h3 class="fw-bold text-white">BERITA</h3>
+                <h3 class="fw-bold text-white">BERITA KOPITU</h3>
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item text-light"><a href="#" class="link-light">Beranda</a></li>
                     <li class="breadcrumb-item text-light active" aria-current="page">Berita</li>
