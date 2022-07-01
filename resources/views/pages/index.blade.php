@@ -4,6 +4,13 @@
 <title>Mitra Strategis – Komite Pengusaha Mikro Kecil Menengah Indonesia Bersatu</title>
 <link rel="stylesheet" href="{{ url('/dist/style/css/pages/index.css') }}">
 <style>
+    .box-banners {
+        display: block;
+        width: 100%;
+        overflow: hidden !important;
+        position: relative;
+    }
+
     .banner-images {
         background-repeat: no-repeat;
         background-position: left, bottom;
@@ -13,7 +20,7 @@
     .box {
         display: block;
     }
-    
+
     .btn-img {
         width: 100%;
         height: 280px;
@@ -30,13 +37,13 @@
         background-repeat: no-repeat;
         transition: all 0.2s;
     }
-    
-    .btn-img:hover > .img-gallery{
+
+    .btn-img:hover>.img-gallery {
         transform: scale(1.2);
 
     }
 
-    @media(max-width: 768px) {
+    @media(max-width: 992px) {
         .btn-img {
             height: 200px;
         }
@@ -45,51 +52,61 @@
 @endsection
 
 @section('pages')
-<div class="py-5 text-dark-blue">
-    <div class="d-block" style="height: 70px"></div>
+<div class="box-banners py-5">
+    <div class="d-block w-100" style="height: 70px"></div>
     <div class="background-left"></div>
     <div class="background-right"></div>
-    <div class="d-block">
-        <div class="container">
-            <div class="row justify-content-md-center align-items-center gy-5">
-                <div class="col-12 col-sm-9 col-md-8 col-lg-6">
-                    <img src="{{ url('/images/elements/yoyok-banners.png') }}" alt="yoyok-pitoyo"
-                        class="img-fluid w-100 d-none d-lg-block animate__animated animate__fadeIn animate__slow">
-                    <img src="{{ url('/images/elements/yoyok.png') }}" alt="yoyok-pitoyo"
-                        class="img-fluid w-100 d-block d-lg-none animate__animated animate__fadeIn animate__slow">
+    <div class="container">
+        <div class="row justify-content-md-center align-items-center gy-5">
+            <div class="col-12 col-sm-9 col-md-8 col-lg-6">
+                <img src="{{ url('/images/elements/yoyok-banners.png') }}" alt="yoyok-pitoyo"
+                    class="img-fluid w-100 d-none d-lg-block animate__animated animate__fadeIn animate__slow">
+                <img src="{{ url('/images/elements/yoyok.png') }}" alt="yoyok-pitoyo"
+                    class="img-fluid w-100 d-block d-lg-none animate__animated animate__fadeIn animate__slow">
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="text-center text-lg-start mb-3">
+                    <h2 class="mb-3 fw-bold animate__animated animate__fadeInUp">KOPITU UMKM INDONESIA</h2>
+                    <p class="mb-4 animate__animated animate__fadeInUp animate__fast">
+                        Masa pandemi sudah hampir kita lalui, para pelaku UMKM maupun Koperasi diharapkan untuk
+                        terus bersemangat dan survive menghadapi gejolak ekonomi dampak dari Pandemi Covid-19. Besar
+                        harapan, para pelaku UMKM dan Koperasi bisa terus bertumbuh, berkembang, inovatif dan
+                        kreatif.
+                    </p>
+                    <p class="mb-4 animate__animated animate__fadeInUp animate__fast">
+                        KOPITU hadir dan berperan langsung melakukan pendampingan kepada UMKM dan Koperasi untuk
+                        meningkatkan kesejahteraan dengan semboyan “UMKM Juara di Negeri sendiri dan Mendunia” dalam
+                        bentuk fasilitasi melalui program-program KOPITU seperti KOPITUPRENEUR, KOPITU Bisnis
+                        Inkubator, Sister City, Penetrasi market di luar negeri ( Kopitu E Store ) Tanipreuner dan
+                        lainnya. informasi lengkap terkait program-program kopitu, bisa diakses melalui Kopitu.co.id
+                    </p>
+                    <p class="mb-4 animate__animated animate__fadeInUp animate__fast">
+                        Sesuai Visi & Misi KOPITU, besar harapan UMKM dan Koperasi bisa Mandiri, Naik Kelas, dan Go
+                        Global (Ekspor)
+                        Melalui program kerja KOPITU yang kongkrit, KOPITU mengajak berbagai pihak seperti
+                        Pemerintah, Swasta, Lembaga-lembaga maupun Individu untuk berkolaborasi membangun UMKM
+                        Indonesia agar UMKM dapat Juara di Negeri sendiri dan Mendunia.
+                    </p>
+                    <p class="fw-bold text-uppercase animate__animated animate__fadeInUp animate__fast">Yoyok
+                        Pitoyo, Salam KOPITU</p>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="text-center text-lg-start mb-3">
-                        <h2 class="mb-3 fw-bold animate__animated animate__fadeInUp">KOPITU UMKM INDONESIA</h2>
-                        <p class="mb-5 animate__animated animate__fadeInUp animate__fast">KOPITU hadir untuk melakukan
-                            pendampingan dan bantuan kepada UMKM dan UKM untuk
-                            meningkatkan kesejahteraan UMKM dan UKM dalam pasar dalam negeri maupun ekspor dalam bentuk
-                            fasilitasi pelatihan, alih teknologi, pemasaran , bantuan hukum serta penguatan modal usaha
-                            dan
-                            pembiayaan.</p>
-                        <p class="fw-bold text-uppercase animate__animated animate__fadeInUp animate__fast">Yoyok
-                            Pitoyo, Salam KOPITU</p>
-                    </div>
-                    <ul class="nav justify-content-center justify-content-lg-start">
-                        <li class="nav-item animate__animated animate__slideInRight">
-                            <a class="nav-link links-menu mx-3 ms-lg-0 me-lg-3" aria-current="page" href="#">
-                                <img src="{{ url('/images/elements/kopitu-preneur.png') }}" alt="preneur"
-                                    class="img-fluid">
-                            </a>
-                        </li>
-                        <li class="nav-item animate__animated animate__slideInRight" style="animation-duration: 1.4s;">
-                            <a class="nav-link links-menu mx-3 ms-lg-0 me-lg-3" aria-current="page" href="#">
-                                <img src="{{ url('/images/elements/keanggotaan.png') }}" alt="preneur"
-                                    class="img-fluid">
-                            </a>
-                        </li>
-                        <li class="nav-item animate__animated animate__slideInRight" style="animation-duration: 1.8s;">
-                            <a class="nav-link links-menu mx-3 ms-lg-0 me-lg-3" aria-current="page" href="#">
-                                <img src="{{ url('/images/elements/event.png') }}" alt="preneur" class="img-fluid">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="nav justify-content-center justify-content-lg-start">
+                    <li class="nav-item animate__animated animate__slideInRight">
+                        <a class="nav-link links-menu mx-3 ms-lg-0 me-lg-3" aria-current="page" href="#">
+                            <img src="{{ url('/images/elements/kopitu-preneur.png') }}" alt="preneur" class="img-fluid">
+                        </a>
+                    </li>
+                    <li class="nav-item animate__animated animate__slideInRight" style="animation-duration: 1.4s;">
+                        <a class="nav-link links-menu mx-3 ms-lg-0 me-lg-3" aria-current="page" href="#">
+                            <img src="{{ url('/images/elements/keanggotaan.png') }}" alt="preneur" class="img-fluid">
+                        </a>
+                    </li>
+                    <li class="nav-item animate__animated animate__slideInRight" style="animation-duration: 1.8s;">
+                        <a class="nav-link links-menu mx-3 ms-lg-0 me-lg-3" aria-current="page" href="#">
+                            <img src="{{ url('/images/elements/event.png') }}" alt="preneur" class="img-fluid">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -165,8 +182,8 @@
     </div>
 </div> --}}
 @livewire('pages.index.galeri')
-
-
+@livewire('pages.index.count-members')
+@livewire('pages.index.members')
 @endsection
 
 @section('script')

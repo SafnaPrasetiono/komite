@@ -1,9 +1,9 @@
 <div>
-    <div class="blue-sky py-5">
+    <div class="py-5" style="background-color: #001777;">
         <div class="container">
             <div class="d-flex flex-column flex-lg-row align-items-lg-center">
                 <div class="mb-3 mb-lg-0">
-                    <h3 class="fw-bold text-white">GALERI</h3>
+                    <h3 class="fw-bold text-white">GALERI KOPITU</h3>
                     <ol class="breadcrumb mb-0">
                         <li class="breadcrumb-item text-light"><a href="#" class="link-light">Beranda</a></li>
                         <li class="breadcrumb-item text-light active" aria-current="page">Galeri</li>
@@ -24,29 +24,27 @@
     <div class="py-5">
         <div class="container">
             @foreach ($data as $index => $item)
-            <div class="card mb-3">
-                <div class="box-content">
-                    <div class="p-3 border-bottom">
-                        <p class="mb-0 fw-bold fs-5 text-dark">{{ $item->title }}</p>
-                    </div>
-                    <div class="p-3">
-                        <p class="mb-2">
-                            {{ $item->locations }},
-                            @if ($item->date_start == $item->date_end)
-                            {{date('d F Y', strtotime($item->date_end))}}
-                            @else
-                            {{date('d', strtotime($item->date_start))}}
-                            <span> - </span>
-                            {{date('d F Y', strtotime($item->date_end))}}
-                            @endif
-                        </p>
-                        <p class="mb-0 text-dark-blue">
-                            <?php echo $item->description ?>
-                        </p>
-                    </div>
-                    <div class="p-3">
-                        @livewire('pages.gallery.images', ['post' => $item, 'indexs' => $index + 1])
-                    </div>
+            <div class="card mb-5">
+                <div class="gallery-date px-3 rounded-3 @if(fmod($index, 2) == 0) start-0 @else end-0 @endif">
+                    <p class="fs-6 m-0 text-capitalize">
+                        {{ $item->locations }},
+                        @if ($item->date_start == $item->date_end)
+                        {{date('d F Y', strtotime($item->date_end))}}
+                        @else
+                        {{date('d F Y', strtotime($item->date_start))}}
+                        <span> - </span>
+                        {{date('d F Y', strtotime($item->date_end))}}
+                        @endif
+                    </p>
+                </div>
+                <div class="p-3 mt-4">
+                    <p class="fs-5 fw-bold text-capitalize mb-1">{{ $item->title }}</p>
+                    <p class="mb-0 text-dark-blue">
+                        <?php echo $item->description ?>
+                    </p>
+                </div>
+                <div class="p-3">
+                    @livewire('pages.gallery.images', ['post' => $item, 'indexs' => $index + 1])
                 </div>
             </div>
             @endforeach

@@ -1,5 +1,5 @@
 <div>
-    <div class="py-5 position-relative">
+    <div class="py-5 position-relative overflow-hidden">
         <div class="background-left"></div>
         <div class="background-right"></div>
         <div class="container mb-3">

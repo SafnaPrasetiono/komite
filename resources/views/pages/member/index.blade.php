@@ -18,9 +18,9 @@
                         pemerintah maupun non pemerintah lintas sectoral dan multi sectoral untuk bersinergi
                         meningkatkan kemampuan
                         bersaing UMKM Indonesia</p>
-                    <a href="#" class="btn btn-outline-primary rounded-0 btn-lg px-5 d-none d-md-inline">Daftar
+                    <a href="{{ route('member.register') }}" class="btn btn-outline-primary rounded-0 btn-lg px-5 d-none d-md-inline">Daftar
                         Sekarang</a>
-                    <a href="#" class="btn btn-outline-danger rounded-0 btn-lg px-5 d-inline d-md-none">Daftar
+                    <a href="{{ route('member.register') }}" class="btn btn-outline-danger rounded-0 btn-lg px-5 d-inline d-md-none">Daftar
                         Sekarang</a>
                 </div>
 
@@ -105,61 +105,6 @@
                 </div>
             </div>
         </div>
-        <div class="d-block py-3 mb-5">
-            <div class="row g-4 justify-content-center align-items-center">
-                <div class="col-12 col-lg-6 order-2 order-lg-1">
-                    <h3 class="fw-bold">KOPITU GOLD</h3>
-                    <hr class="soft" style="width: 100px">
-                    <p class="text-capitalize">Merupakan keanggotaan bagi para Pelaku UMKM yang Memiliki Produk dan
-                        IUMK.
-                        Biaya Rp. 500.000,- (Simpanan Wajib Rp.300.000,-/Tahun, Simpanan Pokok Koperasi Rp.75.000,- &
-                        Kartu
-                        Keanggotaan Rp. 125.000,-)</p>
-                    <ul class="px-3">
-                        <li>Pedampingan Pengurusan HALAL & MD BPOM</li>
-                        <li>
-                            Akses Aplikasi Kasir POS dan E-Store
-                        </li>
-                        <li>
-                            Mendapatkan Pedampingan KUR
-                        </li>
-                        <li>
-                            Kepengurusan NIB Gratis
-                        </li>
-                        <li>Akses Indonesia Grocery KOPITU</li>
-                        <li>Kartu Keanggotaan Fisik</li>
-                    </ul>
-                </div>
-                <div class="col-10 col-md-7 col-lg-5 mx-auto order-1 order-lg-2">
-                    <div class="overflow-hidden rounded-3 shadow">
-                        <img src="{{ url('/images/elements/kopituCartGold.jpeg') }}" alt="about-kopitu"
-                            class="w-100 h-100">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="d-block mb-5">
-            <div class="row g-4 justify-content-center align-items-center mb-4">
-                <div class="col-10 col-md-7 col-lg-5 mx-auto">
-                    <div class="overflow-hidden rounded-3 shadow">
-                        <img src="{{ url('/images/elements/kopituCartPlatinum.jpeg') }}" alt="about-logo"
-                            class="w-100 h-100">
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <h3 class="fw-bold">KOPITU PLATINUM</h3>
-                    <hr class="soft" style="width: 100px">
-                    <p class="text-capitalize">Merupakan Pelaku UKM/Koperasi/Perusahaan yang ingin berkerjasama atau
-                        sudah
-                        memiliki perjanjian MOU dengan pihak KOPITU dan sudah memiliki Akta Notaris.</p>
-                    <p class="text-capitalize">Bisa mengikuti pelatihan MD BPOM & Pendampingan sertifikat produk halal,
-                        di
-                        bantu akses Aplikasi Market Place E-Commerce KOPITU, Produk akan diendorse oleh KOPITU.</p>
-                    <p>Keuntungan yang didapat Kartu Keanggotaan Fisik + Perjanjian MOU </p>
-                    <p class="text-danger fs-5">Rp. <span class="fw-bold">5.500.000</span></p>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
@@ -214,7 +159,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item" style="width: 300px;">
+            {{-- <div class="item" style="width: 300px;">
                 <div class="card pb-4">
                     <div class="card-body text-center px-4" style="height: 18rem">
                         <img src="{{ url('/images/icons/bayar.png') }}" alt="4" class="w-50 mx-auto">
@@ -230,7 +175,7 @@
                             style="width: 46px; height: 46px;">3</span>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <div class="item" style="width: 300px;">
                 <div class="card pb-4">
                     <div class="card-body text-center px-4" style="height: 18rem">
@@ -244,7 +189,7 @@
                     <div class="pt-5 pb-3">
                         <span
                             class="d-flex align-items-center justify-content-center fs-5 mx-auto bg-primary text-white fw-bold rounded-circle"
-                            style="width: 46px; height: 46px;">4</span>
+                            style="width: 46px; height: 46px;">3</span>
                     </div>
                 </div>
             </div>
@@ -261,7 +206,7 @@
                     <div class="pt-5 pb-3">
                         <span
                             class="d-flex align-items-center justify-content-center fs-5 mx-auto bg-primary text-white fw-bold rounded-circle"
-                            style="width: 46px; height: 46px;">5</span>
+                            style="width: 46px; height: 46px;">4</span>
                     </div>
                 </div>
             </div>
@@ -278,7 +223,7 @@
                     <div class="pt-5 pb-3">
                         <span
                             class="d-flex align-items-center justify-content-center fs-5 mx-auto bg-primary text-white fw-bold rounded-circle"
-                            style="width: 46px; height: 46px;">6</span>
+                            style="width: 46px; height: 46px;">5</span>
                     </div>
                 </div>
             </div>

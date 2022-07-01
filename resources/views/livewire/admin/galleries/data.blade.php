@@ -1,6 +1,6 @@
 <div>
 	<div class="d-flex align-items-center py-3">
-		<a class="btn btn-blue px-3" href="{{ route('admin.gallery.create') }}">Tambah</a>
+		<a class="btn btn-theme px-3" href="{{ route('admin.gallery.create') }}">Tambah</a>
         <div class="ms-auto">
             <select wire:model='pages' class="form-select" aria-label="Default select example">
                 <option value="12">12</option>

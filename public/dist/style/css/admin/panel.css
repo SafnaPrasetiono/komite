@@ -70,13 +70,6 @@
     width: 260px;
     height: 100vh;
     position: fixed;
-    background: #36D1DC;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #5B86E5, #36D1DC);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     transition: all 0.3s;
     z-index: 9;
     padding-bottom: 24px;
@@ -154,21 +147,6 @@
     background-color: rgb(230, 230, 230);
     transition: all 0.3s;
     z-index: 1;
-}
-
-.btn-blue {
-    background: #36D1DC;
-    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);
-    background: linear-gradient(to right, #5B86E5, #36D1DC);
-    color: #fff;
-}
-
-.btn-blue:hover {
-    transition: linear all 0.3s;
-    color: #fff;
-    background: #51e0eb;
-    background: -webkit-linear-gradient(to top, #7da2f2, #51e0eb);
-    background: linear-gradient(to top, #7da2f2, #51e0eb);
 }
 
 @media(max-width: 768px) {

@@ -4,7 +4,7 @@
             <div class="d-flex align-items-center mb-4">
                 <div class="d-flex text-dark-blue news-title opacity-0">
                     <i class="fas fa-newspaper fa-2x fa-fw"></i>
-                    <h4 class="fw-bold ms-3">Berita Komite UMKM</h4>
+                    <h4 class="fw-bold ms-3">Berita KOPITU</h4>
                 </div>
                 <a href="#" class="btn btn-outline-primary rounded-pill py-1 ms-auto news-botton opacity-0">
                     Semua <i class="fas fa-angle-right fa-sm fa-fw"></i>

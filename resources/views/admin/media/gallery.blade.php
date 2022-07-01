@@ -16,8 +16,8 @@
 @section('pages')
 <div class="container-fluid">
     <div class="d-block rounded-3 bg-white shadow-sm p-3 mb-3">
-        <p class="fs-4 fw-bold mb-0">Galeri OOH</p>
-        <p class="mb-0 text-secondary">Halaman Data Foto  OOH Kupu-Kupu Global</p>
+        <p class="fs-4 fw-bold mb-0">Galeri KOPITU</p>
+        <p class="mb-0 text-secondary">Halaman Data Galeri Kopitu UMKM</p>
     </div>
     <div class="d-block rounded-3 bg-white shadow-sm mb-3">
         <div class="d-flex align-items-center py-3 px-4 border-bottom">

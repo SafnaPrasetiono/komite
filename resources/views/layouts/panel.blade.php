@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="{{ url('/dist/style/css/animated.css') }}">
     <link rel="stylesheet" href="{{ asset('/dist/owl/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ url('/dist/splide/css/splide.min.css') }}">
+    <link rel="stylesheet" href="{{ url('/assets/dist/css/pages/index.css') }}">
     @livewireStyles
 </head>
 
@@ -144,7 +145,6 @@
                                 <a class="nav-link link-light px-0" href="https://lumbungdeso.id/">Kopitu Preneur</a>
                                 <a class="nav-link link-light px-0 active" aria-current="page" href="#">Kopitu E-Store</a>
                                 <a class="nav-link link-light px-0 active" aria-current="page" href="#">Keanggotaan</a>
-                                <a class="nav-link link-light px-0" href="#">Tentang Kami</a>
                             </nav>
                         </div>
                     </div>
