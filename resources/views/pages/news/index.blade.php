@@ -6,7 +6,7 @@
 @endsection
 
 @section('pages')
-<div style="height: 75px;"></div>
+<div style="height: 70px;"></div>
 <div class="bg-theme-custom py-5">
     <div class="container">
         <div class="d-flex flex-column flex-lg-row align-items-lg-center">

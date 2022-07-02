@@ -5,7 +5,7 @@
 @endsection
 
 @section('pages')
-<div style="height: 75px;"></div>
+<div style="height: 70px;"></div>
 <div class="elementor pb-3">
     <div class="container">
         <div class="row justify-content-center align-items-center gy-4">

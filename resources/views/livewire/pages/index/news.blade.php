@@ -21,7 +21,7 @@
                                 alt="{{ $item->images }}"> --}}
                         </div>
                         <div class="card-body">
-                            <a href="{{ route('news.detail', ['slug' => $item->slug, 'id' => $item->id_news ]) }}"
+                            <a href="{{ route('news.detail', ['slug' => $item->slug]) }}"
                                 class="card-title fs-5 fw-bold text-ellipsis-2 text-decoration-none mb-1">
                                 {{ $item->title }}
                             </a>
@@ -42,7 +42,6 @@
         </div>
     </div>
 
-    <script src="{{ url('/dist/style/js/jquery.js') }}"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
         $(window).scroll(() => {

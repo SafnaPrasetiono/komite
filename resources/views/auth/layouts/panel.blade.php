@@ -3,14 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="safna prasetiono">
+    <meta name="description"
+        content="Komite Pengusaha Mikro Kecil Menengah Indonesia Bersatu (KOPITU) dibentuk sebagai wadah di tingkat nasional yang menyatukan pelaku usaha dan pemangku kepentingan lain baik pemerintah maupun non pemerintah lintas sectoral dan multi sectoral untuk bersinergi meningkatkan kemampuan bersaing UMKM Indonesia.">
+    <meta name="keywords" content="kopitu, kopitu umkm, komite, komite umkm, komite-umkm, umkm"
+        type="application/rss+xml" title="Komite Pengusaha Mikro Kecil Menengah Indonesia Bersatu » Feed">
+    <link rel="alternate" type="application/rss+xml"
+        title="Komite Pengusaha Mikro Kecil Menengah Indonesia Bersatu » Comments Feed">
+
+    <meta name="msapplication-navbutton-color" content="#dd894c" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#dd894c" />
+    <link rel="icon" type="image/png" href="{{asset('/images/logo/kopitu.png')}}" />
+
     @yield('head')
-    <link rel="stylesheet" href="{{ url('/dist/app/css/app.css') }}">
-    <link rel="stylesheet" href="{{ url('/dist/icons/css/all.css') }}">
-    <link rel="stylesheet" href="{{ url('/dist/style/css/auth/auth.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url('/assets/app/css/app.css') }}">
+    <link rel="stylesheet" href="{{ url('/assets/icons/css/all.css') }}">
+    <link rel="stylesheet" href="{{ url('/assets/dist/css/auth/panel.css') }}">
+    <link rel="stylesheet" href="{{ url('/assets/dist/css/color.css') }}">
+    <link rel="stylesheet" href="{{ url('/assets/dist/css/animated.css') }}">
     @livewireStyles
 </head>
 
@@ -18,11 +37,12 @@
 
     @yield('pages')
 
-    <script src="{{ url('/dist/style/js/jquery.js') }}"></script>
-    <script src="{{ url('/dist/style/js/popper.js') }}"></script>
-    <script src="{{ url('/dist/app/js/app.js') }}"></script>
-    <script src="{{ url('/dist/style/js/alert.js') }}"></script>
+    <script src="{{ url('/assets/dist/js/jquery.js') }}"></script>
+    <script src="{{ url('/assets/dist/js/popper.js') }}"></script>
+    <script src="{{ url('/assets/app/js/app.js') }}"></script>
+    <script src="{{ url('/assets/dist/js/alert.js') }}"></script>
     @livewireScripts
+    @yield('script')
 
     @yield('script')
 

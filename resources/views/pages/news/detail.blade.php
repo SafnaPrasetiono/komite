@@ -1,23 +1,25 @@
 @extends('layouts.panel')
 
 @section('head')
+<meta name="description" content="{{ $data->description }}">
+{{-- <meta name="keywords" content=""> --}}
 <title>kopitu - {{ $data->title }}</title>
 <link rel="stylesheet" href="{{ url('/dist/style/css/pages/news.css') }}">
 @endsection
 
 @section('pages')
-<div style="height: 75px;"></div>
-<div class="blue-sky py-5">
+<div style="height: 70px;"></div>
+<div class="bg-theme-custom py-5">
     <div class="container">
         <div class="d-flex flex-column flex-lg-row align-items-lg-center">
             <div class="mb-3 mb-lg-0">
-                <h2 class="mb-3 fw-bold text-capitalize text-light">{{ $data->title }}</h2>
-                <ol class="breadcrumb mb-2">
+                <h2 class="mb-2 fw-bold text-capitalize text-light">{{ $data->title }}</h2>
+                <p class="text-white">Tanggal posting, {{ date('d F Y', strtotime($data->created_at)) }}</p>
+                <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item text-light"><a href="{{ route('index') }}" class="link-light">Beranda</a></li>
                     <li class="breadcrumb-item text-light" aria-current="page"><a href="{{ route('news') }}" class="link-light">Berita</a></li>
                     <li class="breadcrumb-item text-light" aria-current="page">{{ $data->slug }}</li>
                 </ol>
-                <p class="text-white mb-0">Tanggal posting, {{ date('d F Y', strtotime($data->created_at)) }}</p>
             </div>
         </div>
     </div>

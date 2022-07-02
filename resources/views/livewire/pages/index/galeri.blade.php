@@ -135,7 +135,7 @@
               })
               $(window).scroll(() => {
                   var wScroller = $(this).scrollTop();
-                  if (wScroller > $('.galery-box').offset().top - 400) {
+                  if (wScroller > $('.galery-box').offset() - 400) {
                       $('.galery-title').removeClass('opacity-0');
                       $('.galery-title').addClass('animate__animated animate__fadeInLeft');
                       $('.news-botton').removeClass('opacity-0');
