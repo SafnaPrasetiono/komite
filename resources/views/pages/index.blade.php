@@ -66,7 +66,8 @@
             </div>
             <div class="col-12 col-lg-6">
                 <div class="text-center text-lg-start mb-3">
-                    <h2 class="mb-3 fw-bold animate__animated animate__fadeInUp">UKM Juara di Negeri Sendiri & Mendunia</h2>
+                    <h2 class="mb-3 fw-bold animate__animated animate__fadeInUp">UKM Juara di Negeri Sendiri & Mendunia
+                    </h2>
                     <p class="mb-4 animate__animated animate__fadeInUp animate__fast">
                         Masa pandemi sudah hampir kita lalui, para pelaku UMKM maupun Koperasi diharapkan untuk
                         terus bersemangat dan survive menghadapi gejolak ekonomi dampak dari Pandemi Covid-19. Besar
@@ -95,12 +96,14 @@
                 <ul class="nav justify-content-center justify-content-lg-start">
                     <li class="nav-item animate__animated animate__slideInRight">
                         <a class="nav-link links-menu p-0 mx-2 ms-lg-0 me-lg-3" aria-current="page" href="#">
-                            <img src="{{ url('/images/elements/kopitu-preneur.png') }}" alt="preneur" class="img-fluid" width="84px" height="84px">
+                            <img src="{{ url('/images/elements/kopitu-preneur.png') }}" alt="preneur" class="img-fluid"
+                                width="84px" height="84px">
                         </a>
                     </li>
                     <li class="nav-item animate__animated animate__slideInRight" style="animation-duration: 1.4s;">
                         <a class="nav-link links-menu p-0 mx-2 ms-lg-0 me-lg-3" aria-current="page" href="#">
-                            <img src="{{ url('/images/elements/bisnis-inkubator.png') }}" alt="preneur" class="img-fluid" width="84px" height="84px">
+                            <img src="{{ url('/images/elements/bisnis-inkubator.png') }}" alt="preneur"
+                                class="img-fluid" width="84px" height="84px">
                         </a>
                     </li>
                     {{-- <li class="nav-item animate__animated animate__slideInRight" style="animation-duration: 1.8s;">
@@ -114,40 +117,60 @@
     </div>
 </div>
 
-<div class="position-relative shadow-sm" style="background-color: #007bff10;">
-    <div class="container py-5">
+<div class="position-relative py-5" style="background-color: #007bff10;">
+    <div class="container mb-3">
+        <div class="d-block py-1 mb-3">
+            <h3 class="mb-0 fw-bold">KOPITU Program</h3>
+            <p>KOPITU menyediakan berbagai macam program</p>
+        </div>
         <div class="row g-4">
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="link-actived activists-1 shadow rounded-3 py-3" style="background-image: url('/images/banner/activists_bg-1.jpg');">
-                    <div class="d-block lh-sm py-4 ms-3">
-                        <p class="card-title fw-light fs-3 mb-0">TENTANG</p>
-                        <p class="card-text fw-bold fs-3 mb-4">KOPITU</p>
-                        <a href="#" class="stretched-link text-decoration-none">READ MORE</a>
+                <a class="link-boxs" href="#">
+                    <div class="row g-3 align-items-center justify-content-center">
+                        <div class="col-7">
+                            <h3 class="fw-light mb-1">Kopitu</h3>
+                            <h3 class="fw-bold mb-3">PRENEUR</h3>
+                            <p class="mb-0 fw-bold link-primary">READ MORE</i></p>
+                        </div>
+                        <div class="col-5 ms-md-auto">
+                            <img src="{{ url('/images/service/kopitu-preneur.png') }}" alt="kopitu_preneur" class="img-fluid">
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="link-actived activists-2 shadow rounded-3 py-3" style="background-image: url('/images/banner/activists_bg-2.jpg');">
-                    <div class="d-block lh-sm py-4 ms-3">
-                        <p class="card-title fw-light fs-3 mb-0">BUSINESS</p>
-                        <p class="card-text fw-bold fs-3 mb-4">INCUBATORS</p>
-                        <a href="#" class="stretched-link text-decoration-none">READ MORE</a>
+                <a class="link-boxs" href="#">
+                    <div class="row g-3 align-items-center justify-content-center">
+                        <div class="col-7">
+                            <h3 class="fw-light mb-1">Bisnis</h3>
+                            <h3 class="fw-bold mb-3">INCUBATORS</h3>
+                            <p class="mb-0 fw-bold link-primary">READ MORE</i></p>
+                        </div>
+                        <div class="col-5 ms-md-auto">
+                            <img src="{{ url('/images/service/bisnis-incubators.png') }}" alt="kopitu_estore" class="img-fluid">
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-12 col-lg-4">
-                <div class="link-actived activists-3 shadow rounded-3 py-3" style="background-image: url('/images/banner/activists_bg-3.jpg')">
-                    <div class="d-block lh-sm py-4 ms-3">
-                        <p class="card-title fw-light fs-3 mb-0">OUR</p>
-                        <p class="card-text fw-bold fs-3 mb-4">PROGRAMS</p>
-                        <a href="#" class="stretched-link text-decoration-none">READ MORE</a>
+            <div class="col-12 col-md-6 col-lg-4">
+                <a class="link-boxs" href="#">
+                    <div class="row g-3 align-items-center justify-content-center">
+                        <div class="col-7">
+                            <h3 class="fw-light mb-1">Kopitu</h3>
+                            <h3 class="fw-bold mb-3">E-STORE</h3>
+                            <p class="mb-0 fw-bold link-primary">READ MORE</i></p>
+                        </div>
+                        <div class="col-5 ms-md-auto">
+                            <img src="{{ url('/images/service/estore.png') }}" alt="kopitu_estore" class="img-fluid">
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
 </div>
 
+@livewire('pages.index.videos')
 @livewire('pages.index.invitation')
 @livewire('pages.index.news')
 @livewire('pages.index.events')

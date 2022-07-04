@@ -3,13 +3,28 @@
     margin-top: 3rem;
 }
 
+.link-boxs{
+    display: block;
+    position: relative;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 1rem;
+    color: #505050;
+    transition: all 0.3s;
+}
+.link-boxs:hover{
+    color: #505050;
+    box-shadow: 0px 0px 12px #0004;
+}
+
 .link-actived{
     display: flex;
     position: relative;
     background-color: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: right;
 }
 .link-actived:hover{
     transition: 0.8s;

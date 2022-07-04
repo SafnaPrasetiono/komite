@@ -173,7 +173,7 @@
                         <a class="nav-link nav-link-child ps-5" href="{{ route('admin.gallery') }}">
                             <i class="fas fa-image box-icon" aria-hidden="true"></i>Galery
                         </a>
-                        <a class="nav-link nav-link-child ps-5" href="#">
+                        <a class="nav-link nav-link-child ps-5" href="{{ route('admin.video') }}">
                             <i class="fas fa-video box-icon"></i>Video
                         </a>
                     </div>
