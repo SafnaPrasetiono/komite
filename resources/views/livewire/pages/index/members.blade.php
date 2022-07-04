@@ -3,7 +3,7 @@
         <div class="container pt-3 pb-4">
             <div class="d-block mb-4">
                 <h3 class="fw-bold">Keanggotaan KOPITU</h3>
-                <p class="mb-0 text-secondary fs-5">Berikut ini merupakan member terbaik KOPITU</p>
+                <p class="mb-0 text-secondary fs-5">Berikut ini merupakan keanggotaan KOPITU</p>
             </div>
             <div class="d-block mb-3">
                 @if($data->count() != 0)

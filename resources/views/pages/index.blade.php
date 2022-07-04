@@ -68,23 +68,22 @@
                 <div class="text-center text-lg-start mb-3">
                     <h2 class="mb-3 fw-bold animate__animated animate__fadeInUp">UKM Juara di Negeri Sendiri & Mendunia
                     </h2>
-                    <p class="mb-4 animate__animated animate__fadeInUp animate__fast">
+                    <p class="mb-2 text-wellcome animate__animated animate__fadeInUp animate__fast">
                         Masa pandemi sudah hampir kita lalui, para pelaku UMKM maupun Koperasi diharapkan untuk
                         terus bersemangat dan survive menghadapi gejolak ekonomi dampak dari Pandemi Covid-19. Besar
                         harapan, para pelaku UMKM dan Koperasi bisa terus bertumbuh, berkembang, inovatif dan
                         kreatif.
                     </p>
-                    <p class="mb-4 animate__animated animate__fadeInUp animate__fast">
+                    <p class="mb-2 text-wellcome animate__animated animate__fadeInUp animate__fast">
                         KOPITU hadir dan berperan langsung melakukan pendampingan kepada UMKM dan Koperasi untuk
                         meningkatkan kesejahteraan dengan semboyan “UMKM Juara di Negeri sendiri dan Mendunia” dalam
                         bentuk fasilitasi melalui program-program KOPITU seperti KOPITUPRENEUR, KOPITU Bisnis
-                        Inkubator, Sister City, Penetrasi market di luar negeri ( Kopitu E Store ) Tanipreuner dan
+                        Inkubator, Sister City, Penetrasi market di luar negeri (Kopitu E Store) Tanipreuner dan
                         lainnya. informasi lengkap terkait program-program kopitu, bisa diakses melalui Kopitu.co.id
                     </p>
-                    <p class="mb-4 animate__animated animate__fadeInUp animate__fast">
+                    <p class="mb-2 text-wellcome animate__animated animate__fadeInUp animate__fast">
                         Sesuai Visi & Misi KOPITU, besar harapan UMKM dan Koperasi bisa Mandiri, Naik Kelas, dan Go
-                        Global (Ekspor)
-                        Melalui program kerja KOPITU yang kongkrit, KOPITU mengajak berbagai pihak seperti
+                        Global (Ekspor) Melalui program kerja KOPITU yang kongkrit, KOPITU mengajak berbagai pihak seperti
                         Pemerintah, Swasta, Lembaga-lembaga maupun Individu untuk berkolaborasi membangun UMKM
                         Indonesia agar UMKM dapat Juara di Negeri sendiri dan Mendunia.
                     </p>
@@ -106,11 +105,12 @@
                                 class="img-fluid" width="84px" height="84px">
                         </a>
                     </li>
-                    {{-- <li class="nav-item animate__animated animate__slideInRight" style="animation-duration: 1.8s;">
+                    <li class="nav-item animate__animated animate__slideInRight" style="animation-duration: 1.4s;">
                         <a class="nav-link links-menu p-0 mx-2 ms-lg-0 me-lg-3" aria-current="page" href="#">
-                            <img src="{{ url('/images/elements/event.png') }}" alt="preneur" class="img-fluid">
+                            <img src="{{ url('/images/elements/about-me.png') }}" alt="preneur"
+                                class="img-fluid" width="84px" height="84px">
                         </a>
-                    </li> --}}
+                    </li>
                 </ul>
             </div>
         </div>
@@ -130,10 +130,10 @@
                         <div class="col-7">
                             <h3 class="fw-light mb-1">Kopitu</h3>
                             <h3 class="fw-bold mb-3">PRENEUR</h3>
-                            <p class="mb-0 fw-bold link-primary">READ MORE</i></p>
+                            <p class="mb-0 text-primary">READ MORE</i></p>
                         </div>
                         <div class="col-5 ms-md-auto">
-                            <img src="{{ url('/images/service/kopitu-preneur.png') }}" alt="kopitu_preneur" class="img-fluid">
+                            <img src="{{ url('/images/service/kopitu-preneur-icons.png') }}" alt="kopitu_preneur" class="img-fluid">
                         </div>
                     </div>
                 </a>
@@ -144,21 +144,21 @@
                         <div class="col-7">
                             <h3 class="fw-light mb-1">Bisnis</h3>
                             <h3 class="fw-bold mb-3">INCUBATORS</h3>
-                            <p class="mb-0 fw-bold link-primary">READ MORE</i></p>
+                            <p class="mb-0 text-primary">READ MORE</i></p>
                         </div>
                         <div class="col-5 ms-md-auto">
-                            <img src="{{ url('/images/service/bisnis-incubators.png') }}" alt="kopitu_estore" class="img-fluid">
+                            <img src="{{ url('/images/service/bisnis-incubators-icons.png') }}" alt="kopitu_estore" class="img-fluid">
                         </div>
                     </div>
                 </a>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <a class="link-boxs" href="#">
+                <a class="link-boxs" href="https://kopitu.com" target="blank">
                     <div class="row g-3 align-items-center justify-content-center">
                         <div class="col-7">
                             <h3 class="fw-light mb-1">Kopitu</h3>
                             <h3 class="fw-bold mb-3">E-STORE</h3>
-                            <p class="mb-0 fw-bold link-primary">READ MORE</i></p>
+                            <p class="mb-0 text-primary">READ MORE</i></p>
                         </div>
                         <div class="col-5 ms-md-auto">
                             <img src="{{ url('/images/service/estore.png') }}" alt="kopitu_estore" class="img-fluid">

@@ -104,3 +104,9 @@
         z-index: -1;
     }
 }
+
+@media(min-width: 992px){
+    .text-wellcome{
+        font-size: 12px;
+    }
+}

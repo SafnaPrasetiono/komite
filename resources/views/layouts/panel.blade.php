@@ -53,6 +53,16 @@
                     <li class="nav-item">
                         <a class="nav-link link-blue fw-bold" href="{{ route('index') }}">BERANDA</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link link-blue fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          PROGRAM
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Kopitu Preneur</a></li>
+                          <li><a class="dropdown-item" href="#">Kopitu Bisnis Inkubator</a></li>
+                          <li><a class="dropdown-item" href="https://kopitu.com">Kopitu E-Store</a></li>
+                        </ul>
+                      </li>
                     <li class="nav-item">
                         <a class="nav-link link-blue fw-bold" href="{{ route('member') }}">KEANGGOTAAN</a>
                     </li>
