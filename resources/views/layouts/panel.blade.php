@@ -54,15 +54,16 @@
                         <a class="nav-link link-blue fw-bold" href="{{ route('index') }}">BERANDA</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link link-blue fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          PROGRAM
+                        <a class="nav-link link-blue fw-bold" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PROGRAM
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Kopitu Preneur</a></li>
-                          <li><a class="dropdown-item" href="#">Kopitu Bisnis Inkubator</a></li>
-                          <li><a class="dropdown-item" href="https://kopitu.com">Kopitu E-Store</a></li>
+                            <li><a class="dropdown-item" href="#">Kopitu Preneur</a></li>
+                            <li><a class="dropdown-item" href="#">Kopitu Bisnis Inkubator</a></li>
+                            <li><a class="dropdown-item" href="https://kopitu.com">Kopitu E-Store</a></li>
                         </ul>
-                      </li>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link link-blue fw-bold" href="{{ route('member') }}">KEANGGOTAAN</a>
                     </li>
@@ -89,10 +90,26 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto" id="navAccordion">
                 <li class="nav-item">
                     <a class="nav-link link-blue fw-bold" href="{{ route('index') }}">BERANDA</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed link-blue fw-bold " href="#" data-bs-toggle="collapse" data-bs-target="#program">
+                        PROGRAM <i class="indications fas fa-angle-down fa-sm fa-fw"></i>
+                    </a>
+                </li>
+                <div id="program" class="accordion-collapse collapse">
+                    <li class="nav-item">
+                        <a class="nav-link link-blue fw-bold ms-3" href="#">KOPITU PRENEUR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-blue fw-bold ms-3" href="#">KOPITU INKUBATOR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-blue fw-bold ms-3" href="https://kopitu.com" target="blank">KOPITU E-STORE</a>
+                    </li>
+                </div>
                 <li class="nav-item">
                     <a class="nav-link link-blue fw-bold" href="{{ route('member') }}">KEANGGOTAAN</a>
                 </li>
@@ -226,6 +243,14 @@
     <script src="{{ asset('/assets/owl/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('/assets/splide/js/splide.min.js') }}"></script>
     @livewireScripts
+
+    <script>
+        $(document).ready(function(){
+            $(".dropdown").hover(function(){
+                $(".dropdown-menu").slideToggle();
+            });
+        });
+    </script>
     @yield('script')
 
     @if(session()->has('success'))

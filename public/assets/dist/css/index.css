@@ -60,6 +60,19 @@
     color: #006ee4!important;
 }
 
+.nav-link.collapse .indications{
+    transition: all 0.3s;
+    margin-left: auto;
+}
+.nav-link.collapsed .indications{
+    -webkit-transform: rotate(-180deg);    
+    -moz-transform: rotate(-180deg);        
+    -o-transform: rotate(-180deg);          
+    -ms-transform: rotate(-180deg);         
+    transform: rotate(-180deg);
+}
+
+
 /* custom text ellipsis */
 .text-ellipsis-1 {
     display: -webkit-box;
@@ -121,9 +134,7 @@
 }
 
 
-.title-galery{
-    /* border-bottom: 2px dashed #000; */
-}
+
 .box-border{
     width: 10px;
     border-left: 3px dashed #007bff37;
