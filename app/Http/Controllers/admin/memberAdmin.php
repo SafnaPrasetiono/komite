@@ -4,7 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\categories;
-use App\Models\members;
+use App\Models\Members;
 use App\Models\members_address;
 use App\Models\members_categories;
 use App\Models\members_documents;
