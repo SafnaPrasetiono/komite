@@ -199,6 +199,7 @@
     <script src="{{ url('/assets/app/js/app.js') }}"></script>
     <script src="{{ url('/assets/dist/js/alert.js') }}"></script>
     <script src="{{ url('/assets/dist/js/admin/panel.js') }}"></script>
+    <script src="{{ asset('/assets/ckeditor5/ckeditor.js') }}"></script>
     <script src="{{ asset('/assets/owl/owl.carousel.min.js') }}"></script>
     @livewireScripts
     @yield('script')
