@@ -49,9 +49,7 @@
             @method('POST')
             @livewire('pages.members.biodata')
             @livewire('pages.members.address')
-            @livewire('pages.members.documents')
             @livewire('pages.members.categories')
-            @livewire('pages.members.permission')
             <div class="d-block rounded border mb-3">
                 <div class="py-2 px-3 border-bottom">
                     <p class="mb-0 fw-bold">Syarat Ketentuan</p>

@@ -2,7 +2,7 @@
     <div class="position-relative d-block rounded-3 shadow-sm bg-white p-3">
         <div class="d-flex mb-3">
             <div class="ms-auto">
-                <input type="text" class="form-control" placeholder="Cari Transaksi...">
+                <input wire:model='search' type="text" class="form-control" placeholder="Cari Member...">
             </div>
         </div>
         <div class="d-block table-responsive">
@@ -31,9 +31,9 @@
                         </td>
                         <td>
                             @if ($item->validate == 1)
-                            <span class="badge text-bg-success">Valid</span>
+                            <span class="badge rounded-pill bg-success">Valid</span>
                             @else
-                            <span class="badge text-bg-secondary">InValid</span>
+                            <span class="badge rounded-pill bg-secondary">InValid</span>
                             @endif
                         </td>
                         <td>

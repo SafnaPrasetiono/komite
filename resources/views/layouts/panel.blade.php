@@ -13,18 +13,16 @@
     <link rel="alternate" type="application/rss+xml"
         title="Komite Pengusaha Mikro Kecil Menengah Indonesia Bersatu » Comments Feed">
 
-    <meta name="msapplication-navbutton-color" content="#dd894c" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#dd894c" />
+    <meta name="msapplication-navbutton-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
     <link rel="icon" type="image/png" href="{{asset('/images/logo/kopitu.png')}}" />
 
     @yield('head')
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="{{ url('/assets/app/css/app.css') }}">
     <link rel="stylesheet" href="{{ url('/assets/icons/css/all.css') }}">
     <link rel="stylesheet" href="{{ url('/assets/dist/css/color.css') }}">
@@ -58,7 +56,7 @@
                             data-bs-toggle="dropdown" aria-expanded="false">
                             PROGRAM
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu border-0 shadow" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Kopitu Preneur</a></li>
                             <li><a class="dropdown-item" href="#">Kopitu Bisnis Inkubator</a></li>
                             <li><a class="dropdown-item" href="https://kopitu.com">Kopitu E-Store</a></li>
@@ -95,7 +93,8 @@
                     <a class="nav-link link-blue fw-bold" href="{{ route('index') }}">BERANDA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link collapsed link-blue fw-bold " href="#" data-bs-toggle="collapse" data-bs-target="#program">
+                    <a class="nav-link collapsed link-blue fw-bold " href="#" data-bs-toggle="collapse"
+                        data-bs-target="#program">
                         PROGRAM <i class="indications fas fa-angle-down fa-sm fa-fw"></i>
                     </a>
                 </li>
@@ -107,7 +106,8 @@
                         <a class="nav-link link-blue fw-bold ms-3" href="#">KOPITU INKUBATOR</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-blue fw-bold ms-3" href="https://kopitu.com" target="blank">KOPITU E-STORE</a>
+                        <a class="nav-link link-blue fw-bold ms-3" href="https://kopitu.com" target="blank">KOPITU
+                            E-STORE</a>
                     </li>
                 </div>
                 <li class="nav-item">
@@ -243,14 +243,6 @@
     <script src="{{ asset('/assets/owl/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('/assets/splide/js/splide.min.js') }}"></script>
     @livewireScripts
-
-    <script>
-        $(document).ready(function(){
-            $(".dropdown").hover(function(){
-                $(".dropdown-menu").slideToggle();
-            });
-        });
-    </script>
     @yield('script')
 
     @if(session()->has('success'))

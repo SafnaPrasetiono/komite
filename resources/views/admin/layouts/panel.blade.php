@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="{{ url('/assets/dist/css/animated.css') }}">
     <link rel="stylesheet" href="{{ url('/assets/dist/css/admin/panel.css') }}">
     <link rel="stylesheet" href="{{ url('/assets/dist/css/admin/color.css') }}">
-    
+
     @livewireStyles
 </head>
 
@@ -136,7 +136,7 @@
                     <hr class="soft my-1 text-white">
                     <a class="nav-link collapsed" href="#services" type="button" data-bs-toggle="collapse"
                         data-bs-target="#services">
-                        <i class="fas fa-users box-icon fa-fw "></i>Keanggotaan
+                        <i class="fas fa-users box-icon fa-fw"></i>Keanggotaan
                         <span class="indications">
                             <i class="fas fa-angle-up fa-sm fa-fw"></i>
                         </span>
@@ -160,11 +160,11 @@
                         <i class="fas fa-newspaper box-icon" aria-hidden="true"></i>Berita
                     </a>
                     <a class="nav-link collapsed" href="#media" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#media">
-                    <i class="fas fa-images box-icon"></i> Media
-                    <span class="indications">
-                        <i class="fas fa-angle-up fa-sm fa-fw"></i>
-                    </span>
+                        data-bs-target="#media">
+                        <i class="fas fa-images box-icon"></i> Media
+                        <span class="indications">
+                            <i class="fas fa-angle-up fa-sm fa-fw"></i>
+                        </span>
                     </a>
                     <div id="media" class="accordion-collapse collapse" data-bs-parent="#nav-accordion">
                         <a class="nav-link nav-link-child ps-5" href="{{ route('admin.banners') }}">

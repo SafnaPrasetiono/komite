@@ -17,8 +17,7 @@ class Address extends Component
     public $villages = [];
     public function render()
     {
-        $province = Province::find(51);
-        $this->province_id = 51;
+        $province = Province::all();
         if($this->province_id){
             $this->getcity = Regency::where('province_id', $this->province_id)->get();
         }

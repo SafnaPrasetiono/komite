@@ -14,43 +14,31 @@
             @endif
         </div>
         <div class="p-3">
-            <div class="row g-4">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                    <label for="photos" class="form-label">Photos</label>
-                    <div class="">
-                        <img src="{{ url('/images/members/avatar/' . $data->avatar) }}" alt="{{ $data->username }}"
-                            class=" img-fluid">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input readonly type="text" name="username" id="username" class="form-control"
+                    value="{{ $data->username }}">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input readonly id="email" class="form-control " value="{{ $data->email }}">
+            </div>
+            <div class="row g-3">
+                <div class="col-12">
+                    <label for="phone" class="form-label">Nomor Telepon</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">+62</span>
+                        <input readonly type="number" name="phone" class="form-control " id="phone"
+                            value="{{ $data->phone }}">
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-7 col-lg-9 col-xl-9">
-                    <div class="row g-3">
-                        <div class="col-12">
-                            <label for="username" class="form-label">Username</label>
-                            <input readonly type="text" name="username" id="username" class="form-control"
-                                value="{{ $data->username }}">
-                        </div>
-                        <div class="col-12">
-                            <label for="email" class="form-label">Email</label>
-                            <input readonly id="email" class="form-control " value="{{ $data->email }}">
-                        </div>
-                        <div class="col-12">
-                            <label for="phone" class="form-label">Nomor Telepon</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">+62</span>
-                                <input readonly type="number" name="phone" class="form-control " id="phone"
-                                    value="{{ $data->phone }}">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <label for="born" class="form-label">Tanggal Lahir</label>
-                            <input readonly type="date" name="born" id="born" class="form-control"
-                                value="{{ $data->born }}">
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <label for="gender" class="form-label">Jenis Kelamin</label>
-                            <input readonly type="text" class="form-control" id="gender" value="{{ $data->gender }}">
-                        </div>
-                    </div>
+                <div class="col-12 col-md-6">
+                    <label for="born" class="form-label">Tanggal Lahir</label>
+                    <input readonly type="date" name="born" id="born" class="form-control" value="{{ $data->born }}">
+                </div>
+                <div class="col-12 col-md-6">
+                    <label for="gender" class="form-label">Jenis Kelamin</label>
+                    <input readonly type="text" class="form-control" id="gender" value="{{ $data->gender }}">
                 </div>
             </div>
         </div>
@@ -64,57 +52,65 @@
             <div class="row g-2">
                 <div class="col-12 col-md-6">
                     <label for="province" class="form-label">Provinsi</label>
-                    <input type="text" class="form-control" value="{{ $address->province }}" readonly>
+                    <input type="text" class="form-control" value="{{ $data->province }}" readonly>
                 </div>
                 <div class="col-12 col-md-6">
                     <label for="city" class="form-label">Kota/kabupaten</label>
-                    <input type="text" class="form-control" value="{{ $address->city }}" readonly>
+                    <input type="text" class="form-control" value="{{ $data->city }}" readonly>
                 </div>
                 <div class="col-12 col-md-6">
                     <label for="kecamatan" class="form-label">kecamatan</label>
-                    <input type="text" class="form-control" value="{{ $address->district }}" readonly>
+                    <input type="text" class="form-control" value="{{ $data->district }}" readonly>
                 </div>
                 <div class="col-12 col-md-6">
                     <label for="kelurahan" class="form-label">kelurahan</label>
-                    <input type="text" class="form-control" value="{{ $address->village }}" readonly>
+                    <input type="text" class="form-control" value="{{ $data->village }}" readonly>
                 </div>
                 <div class="col-12 col-md-6">
                     <label for="postal_code" class="form-label">Kode Pos</label>
                     <input type="text" name="postal_code" class="form-control" id="postal_code"
-                        value="{{ $address->postal_code }}" readonly>
+                        value="{{ $data->postal_code }}" readonly>
                 </div>
                 <div class="col-12 col-md-6">
                     <label for="country" class="form-label">Warga Negara</label>
-                    <input type="text" name="country" class="form-control" id="country" value="{{ $address->country }}"
+                    <input type="text" name="country" class="form-control" id="country" value="{{ $data->country }}"
                         readonly>
                 </div>
                 <div class="col-12">
                     <label for="address" class="form-label">Alamat Lengkap</label>
                     <textarea name="address" id="address" rows="4" class="form-control"
-                        readonly>{{ $address->address }}</textarea>
+                        readonly>{{ $data->address }}</textarea>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="d-block rounded-3 bg-white shadow-sm mb-3">
-        <div class="p-3 border-bottom">
-            <p class="mb-0 fw-bold">Kelas Usaha dan Jenis Usaha</p>
+        <div class="py-2 px-3 border-bottom">
+            <p class="mb-0 fw-bold">Dekripsi Usaha</p>
         </div>
         <div class="p-3">
             <div class="mb-3">
-                <label for="class" class="form-label">Kelas Usaha</label>
-                <input type="text" class="form-control fw-bold" value="{{ $data->class }}" readonly>
+                <label for="jenis-usaha" class="form-label">Jenis Usaha</label>
+                <input name="typeBusiness" type="text" class="form-control" value="{{ $data->typeBusiness }}" disabled>
             </div>
-            <div class="row g-2">
-                <div class="col-12 col-md-6">
-                    <label for="categories" class="form-label">Kategori</label>
-                    <input type="text" class="form-control" value="{{ $ctg->categories }}" readonly>
-                </div>
-                <div class="col-12 col-md-6">
-                    <label for="categories_subs_id" class="form-label">Sub Kategori</label>
-                    <input type="text" class="form-control" value="{{ $ctg->categories_subs }}" readonly>
-                </div>
+            <div class="mb-3">
+                <label for="class" class="form-label">Kelas Usaha</label>
+                <input name="typeBusiness" type="text" class="form-control" value="{{ $data->class }}" disabled>
+            </div>
+            {{-- <div class="mb-3">
+                <select name="class" class="form-select mb-3" aria-label=".form-select-lg example">
+                    <option value="" selected>Pilih Kelas Usaha</option>
+                    <option value="MIKRO">MIKRO - (50JT-300JT)</option>
+                    <option value="KECIL">KECIL - (300JT-500JT)</option>
+                    <option value="MENENGAH">MENENGAH - (2.5M-50M)</option>
+                    <option value="BESAR">BESAR - (> 50M)</option>
+                </select>
+            </div> --}}
+            <div class="mb-3">
+                <label for="description" class="form-label">Deskripsi Usaha</label>
+                <textarea name="description" id="description" rows="6" class="form-control"
+                readonly>{{ $data->description }}</textarea>
             </div>
         </div>
     </div>
@@ -198,16 +194,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="d-block rounded-3 bg-white shadow-sm mb-3">
-        <div class="py-2 px-3 border-bottom">
-            <p class="mb-0 fw-bold">Dekripsi Usaha</p>
-        </div>
-        <div class="p-3">
-            <textarea name="description" id="description" rows="6" class="form-control"
-                readonly>{{ $data->description }}</textarea>
         </div>
     </div>
 

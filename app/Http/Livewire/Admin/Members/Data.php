@@ -3,16 +3,17 @@
 namespace App\Http\Livewire\Admin\Members;
 
 use App\Models\members;
-use App\Models\members_address;
-use App\Models\members_categories;
-use App\Models\members_documents;
-use App\Models\members_permission;
+use App\Models\MembersAddress;
+use App\Models\MembersCategories;
+use App\Models\MembersDocuments;
+use App\Models\MembersPermissions;
 use Livewire\Component;
 use Livewire\WithPagination;
 
 class Data extends Component
 {
     use WithPagination;
+    public $search;
     public $members_id;
 
     protected $listeners = ['deleteAction' => 'delete'];
@@ -26,10 +27,7 @@ class Data extends Component
     {
         $data = members::find($this->members_id);
         if($data){
-            members_address::where('members_id', $data->id_members)->delete();
-            members_categories::where('members_id', $data->id_members)->delete();
-            members_documents::where('members_id', $data->id_members)->delete();
-            members_permission::where('members_id', $data->id_members)->delete();
+            MembersPermissions::where('members_id', $data->id_members)->delete();
             $data->delete();
             $this->dispatchBrowserEvent('success', 'Data member berhasil dihapus');
         }else {
@@ -38,7 +36,11 @@ class Data extends Component
     }
     public function render()
     {
-        $data = members::orderBy('created_at', 'desc')->paginate(12);
+        if($this->search){
+            $data = members::where('username', $this->search)->orderBy('created_at', 'desc')->paginate(12);
+        } else {
+            $data = members::orderBy('created_at', 'desc')->paginate(12);
+        }
         return view('livewire.admin.members.data', ['data' => $data]);
     }
 }

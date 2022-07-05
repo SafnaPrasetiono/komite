@@ -9,8 +9,10 @@
                     <label for="province" class="form-label">Provinsi</label>
                     {{-- <input type="text" name="province" id="province" class="form-control @error('province') is-invalid @enderror"> --}}
                     <select wire:model='province_id' name="province_id" id="province" class="form-select">
-                        {{-- <option value="">Pilih provinsi</option> --}}
-                        <option value="{{ $province->id }}" selected>{{ $province->name }}</option>
+                        <option value="">Pilih provinsi</option>
+                        @foreach ($province as $item)
+                        <option value="{{ $item->id }}">{{ $item->name }}</option>
+                        @endforeach
                     </select>
                     @error('province')
                     <div class="invalid-feedback">

@@ -15,15 +15,15 @@ return new class extends Migration
     {
         Schema::create('members_permissions', function (Blueprint $table) {
             $table->id('id_members_permissions');
-            $table->boolean('ud');
-            $table->boolean('siup');
-            $table->boolean('halal');
-            $table->boolean('bpom');
-            $table->boolean('pirt');
-            $table->boolean('nib');
-            $table->boolean('sku');
-            $table->boolean('izin');
-            $table->integer('members_id');
+            $table->boolean('ud')->default(0)->nullable();
+            $table->boolean('siup')->default(0)->nullable();
+            $table->boolean('halal')->default(0)->nullable();
+            $table->boolean('bpom')->default(0)->nullable();
+            $table->boolean('pirt')->default(0)->nullable();
+            $table->boolean('nib')->default(0)->nullable();
+            $table->boolean('sku')->default(0)->nullable();
+            $table->boolean('izin')->default(0)->nullable();
+            $table->bigInteger('members_id');
             $table->timestamps();
         });
     }
