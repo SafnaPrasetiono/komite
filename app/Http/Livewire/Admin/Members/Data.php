@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire\Admin\Members;
 
-use App\Models\members;
+use App\Models\Members;
 use App\Models\MembersAddress;
 use App\Models\MembersCategories;
 use App\Models\MembersDocuments;
