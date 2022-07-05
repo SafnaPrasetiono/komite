@@ -35,6 +35,32 @@ class memberController extends Controller
     {
         // dd($request->ud);
         // dd($request);
+        $data = array();
+
+        if($request->ud){
+            array_push($data, 'UD');
+        }
+        if($request->siup){
+            array_push($data, 'SIUP');
+        }
+        if($request->halal){
+            array_push($data, 'HALAL');
+        }
+        if($request->bpom){
+            array_push($data, 'BPOM');
+        }
+        if($request->pirt){
+            array_push($data, 'PIRT');
+        }
+        if($request->nib){
+            array_push($data, 'NIB');
+        }
+        if($request->sku){
+            array_push($data, 'SKU');
+        }
+        if($request->izin){
+            array_push($data, 'IZIN');
+        }
 
         $validate = Validator::make($request->all(), [
             'username'      => 'required',
@@ -76,6 +102,7 @@ class memberController extends Controller
             $members->typeBusiness = $request->typeBusiness;
             $members->class = $request->class;
             $members->description = $request->description;
+            $members->permission = json_encode($data);
 
             $members->country = $request->country;
             $members->province = $provinces->name;

@@ -110,7 +110,7 @@
             <div class="mb-3">
                 <label for="description" class="form-label">Deskripsi Usaha</label>
                 <textarea name="description" id="description" rows="6" class="form-control"
-                readonly>{{ $data->description }}</textarea>
+                    readonly>{{ $data->description }}</textarea>
             </div>
         </div>
     </div>
