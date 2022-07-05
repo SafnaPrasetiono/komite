@@ -208,7 +208,7 @@
 </div> --}}
 @livewire('pages.index.galeri')
 @livewire('pages.index.count-members')
-@livewire('pages.index.members')
+{{-- @livewire('pages.index.members') --}}
 @endsection
 
 @section('script')

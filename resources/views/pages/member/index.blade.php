@@ -32,7 +32,7 @@
     </div>
 </div>
 @livewire('pages.index.count-members')
-<div class="pt-5 pb-4" style="background-color: #007bff50;">
+{{-- <div class="pt-5 pb-4" style="background-color: #007bff50;">
     <div class="container pt-3 pb-4">
         <div class="d-block mb-3">
             <h4 class="fw-bold">Keanggotaan KOPITU</h4>
@@ -74,7 +74,7 @@
             </section>
         </div>
     </div>
-</div>
+</div> --}}
 
 <div class="py-5">
     <div class="container">
