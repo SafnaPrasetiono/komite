@@ -49,9 +49,9 @@
                                     <td>{{ $data->class }}</td>
                                     <td>
                                         @if ($data->validate == 1)
-                                        <span class="badge text-bg-primary">Sudah Valid</span>
+                                        <span class="badge bg-primary">Sudah Valid</span>
                                         @else
-                                        <span class="badge text-bg-secondary">Belum divalidasi</span>
+                                        <span class="badge bg-secondary">Belum divalidasi</span>
                                         @endif
                                     </td>
                                 </tr>
