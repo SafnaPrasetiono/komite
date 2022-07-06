@@ -50,14 +50,5 @@
             </div>
             @endforeach
         </div>
-        @if ($data->hasPages())
-        <div class="container">
-            <div class="d-block py-3">
-                <nav class="d-block pt-4">
-                    {{ $data->links('layouts.paginations') }}
-                </nav>
-            </div>
-        </div>
-        @endif
     </div>
 </div>
