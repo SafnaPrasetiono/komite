@@ -34,7 +34,7 @@
                     </div>
                 </div>
             </div>
-            <div class="d-block py-3">
+            <div class="d-block py-2">
                 <div class="text-center">
                     <a href="https://www.youtube.com/channel/UCpY1NmvOFZlvOqVtPSsrnDA" class="btn btn-primary px-5">LIHAT SEMUA VIDEO</a>
                 </div>
