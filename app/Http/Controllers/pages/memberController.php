@@ -123,7 +123,7 @@ class memberController extends Controller
             $toCode = $members->id_members . date('YmdHis');
             $haseCode = md5($toCode);
             $key = substr(strtoupper($haseCode), 0, 12);
-            $code = 'KOP' . '-' . $key;
+            $code = 'KOP' . $key;
 
             $updateMembers = Members::find($members->id_members);
             $updateMembers->code = $code;
@@ -141,7 +141,7 @@ class memberController extends Controller
             $permission->members_id = $members->id_members;
             $permission->save();
 
-            // Mail::to($request->email)->send(new ValidateMembers($updateMembers));
+            Mail::to($request->email)->send(new ValidateMembers($updateMembers));
             try {
                 return redirect()->route('member.register')->with('success', 'Pendaftaran kamu berhasil tunggu validasi data. Cek email email anda secara berkala!.');
             } catch (\Throwable $th) {

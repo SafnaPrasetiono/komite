@@ -9,7 +9,11 @@ class Videos extends Component
 {
     public function render()
     {
-        $data = ModelsVideos::orderby('created_at', 'desc')->limit(6)->get();
-        return view('livewire.pages.index.videos',['data' => $data]);
+        $mars = ModelsVideos::where('title', 'mars kopitu')->first();
+        $data = ModelsVideos::orderby('created_at', 'desc')->limit(3)->get();
+        return view('livewire.pages.index.videos',[
+            'mars' => $mars,
+            'data' => $data,
+        ]);
     }
 }

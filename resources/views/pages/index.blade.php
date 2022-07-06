@@ -92,7 +92,7 @@
                         Yoyok Pitoyo
                     </p>
                 </div>
-                <ul class="nav justify-content-center justify-content-lg-start">
+                {{-- <ul class="nav justify-content-center justify-content-lg-start">
                     <li class="nav-item animate__animated animate__slideInRight">
                         <a class="nav-link links-menu p-0 mx-2 ms-lg-0 me-lg-3" aria-current="page" href="#">
                             <img src="{{ url('/images/elements/kopitu-preneur.png') }}" alt="preneur" class="img-fluid"
@@ -111,7 +111,7 @@
                                 class="img-fluid" width="84px" height="84px">
                         </a>
                     </li>
-                </ul>
+                </ul> --}}
             </div>
         </div>
     </div>

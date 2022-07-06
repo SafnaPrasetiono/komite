@@ -72,10 +72,10 @@
                         <a class="nav-link link-blue fw-bold" href="{{ route('events') }}">EVENTS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-blue fw-bold" href="{{ route('gallery') }}">KALEIDOSKOP GALERI</a>
+                        <a class="nav-link link-blue fw-bold" href="{{ route('gallery') }}">KALEIDOSKOP</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-blue fw-bold" href="{{ route('aboutus') }}">TENTANG KAMI</a>
+                        <a class="nav-link link-blue fw-bold" href="{{ route('aboutus') }}">TENTANG KOPITU</a>
                     </li>
                 </ul>
             </div>
@@ -120,10 +120,10 @@
                     <a class="nav-link link-blue fw-bold" href="{{ route('events') }}">EVENT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link-blue fw-bold" href="{{ route('gallery') }}">KALEIDOSKOP GALERI</a>
+                    <a class="nav-link link-blue fw-bold" href="{{ route('gallery') }}">KALEIDOSKOP</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link-blue fw-bold" href="{{ route('aboutus') }}">TENTANG KAMI</a>
+                    <a class="nav-link link-blue fw-bold" href="{{ route('aboutus') }}">TENTANG KOPITU</a>
                 </li>
             </ul>
         </div>

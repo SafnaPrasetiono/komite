@@ -15,9 +15,9 @@ class Data extends Component
     public function render()
     {
         if($this->search){
-            $data = galleries_content::where('publish', 1)->where('title', $this->search)->orderBy('created_at', 'desc')->paginate(12);
+            $data = galleries_content::where('publish', 1)->where('title', $this->search)->orderBy('date_start', 'desc')->paginate(12);
         }else {
-            $data = galleries_content::where('publish', 1)->orderBy('created_at', 'desc')->paginate(12);
+            $data = galleries_content::where('publish', 1)->orderBy('date_start', 'desc')->paginate(12);
         }
         return view('livewire.pages.gallery.data', ['data' => $data]);
     }

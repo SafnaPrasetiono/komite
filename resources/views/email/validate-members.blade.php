@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>info@kopitudenpasar.com</title>
+    <title>info@kopitu.co.id</title>
 </head>
 
 <body>
@@ -16,11 +16,11 @@
             <div style="box-sizing:border-box;display:block!important">
                 <h2
                     style="box-sizing:border-box;margin-top:0;margin-bottom:.5rem;line-height:1.2;font-size:2rem;page-break-after:avoid;margin:0!important;padding-top:1.5rem!important;color:#ffffff!important">
-                    <span>Kopitu</span><span>Denpasar</span>
+                    <span>Kopitu</span>
                 </h2>
                 <p
                     style="box-sizing:border-box;margin-top:0;margin-bottom:1rem;display:block!important;margin:0!important;color:#fff!important">
-                    Selamat datang di kopitu denpasar</p>
+                    Selamat datang di kopitu</p>
                 <hr
                     style="box-sizing:content-box;height:0;overflow:visible;margin-top:1rem;margin-bottom:.5rem!important;border:0;border-top:1px solid rgba(0,0,0,.1);background-color:#fff!important">
             </div>
@@ -34,7 +34,7 @@
                         Hallo {{ $data['username'] }},
                     </p>
                     <p style="box-sizing:border-box;margin-top:0;margin-bottom:1rem;display:block!important">
-                        Terima kasih telah mendaftar keanggotaan Kopitu Denpasar. Berikut adalah
+                        Terima kasih telah mendaftar keanggotaan Kopitu. Berikut adalah
                         detail akun Anda dan kode pendaftaran anda, pastikan Anda menyimpannya dengan aman.
                     </p>
                 </div>
@@ -59,8 +59,7 @@
                         style="box-sizing:content-box;height:0;overflow:visible;margin-top:1rem;margin-bottom:1rem;border:0;border-top:1px solid rgba(0,0,0,.1)">
                 </div>
                 <div style="box-sizing:border-box;display:block!important">
-                    Cek secara berkala data pendaftaran anda di form pendaftaran keanggotaan kopitu denpasar
-                    berikut ini merupakan kode pendaftaran data anda:
+                    Cek secara berkala data pendaftaran anda di form pendaftaran keanggotaan kopitu berikut ini merupakan kode pendaftaran data anda:
                 </div>
 
                 <div
@@ -71,7 +70,7 @@
                 </div>
                 <div style="box-sizing:border-box;display:block!important">
                     <p style="box-sizing:border-box;margin-top:0;margin-bottom:.5rem!important;display:block!important">
-                        Kode diatas dipergunakan untuk melihat status dari pendaftaran keanggotaan yang kamu daftarakan sebelumnya. kamu bisa cek data pendaftaran keanggotaan kamu di website resmi kopitu denpasar.
+                        Kode diatas dipergunakan untuk melihat status dari pendaftaran keanggotaan yang kamu daftarakan sebelumnya. kamu bisa cek data pendaftaran keanggotaan kamu di website resmi kopitu.
                     </p>
                     <p style="box-sizing:border-box;margin-top:0;margin-bottom:1rem;display:block!important">
                         <strong style="box-sizing:border-box;font-weight:bolder">Catatan :</strong> Jika email ini masuk
@@ -87,12 +86,12 @@
                 <div
                     style="box-sizing:border-box;display:block!important;padding-top:.5rem!important;text-align:center!important;color:#fff!important">
                     <small style="box-sizing:border-box;font-size:80%;font-weight:400">Anda menerima pesan ini sebagai
-                        aktivasi pendaftaran kopitu e-store.</small>
+                        aktivasi pendaftaran keanggotaan kopitu.</small>
                 </div>
                 <div
                     style="box-sizing:border-box;display:block!important;padding-bottom:1.5rem!important;text-align:center!important;color:#fff!important">
                     <small style="box-sizing:border-box;font-size:80%;font-weight:400">
-                        © 2022 <span>Kopitu e-store</span>, jakarta.
+                        © 2022 <span>Kopitu</span>, jakarta.
                     </small>
                 </div>
             </div>

@@ -1,8 +1,8 @@
 <div>
     <div class="d-flex mb-3">
-        <a href="{{ route('admin.news.create') }}" class="btn btn-outline-secondary">Tambah</a>
+        <a href="{{ route('admin.news.create') }}" class="btn btn-theme">Tambah</a>
         <div class="ms-auto">
-            <input type="text" class="form-control" placeholder="Cari Transaksi...">
+            <input type="text" class="form-control" placeholder="Cari Berita...">
         </div>
     </div>
     <div class="d-block table-responsive">

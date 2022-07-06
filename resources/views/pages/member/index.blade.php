@@ -107,7 +107,7 @@
         </div>
     </div>
 </div>
-
+@livewire('pages.members.checking')
 <div class="py-4 alert-primary">
     <div class="container py-5">
         <div class="d-flex align-items-center mb-4">

@@ -1,7 +1,7 @@
 <div>
-    <div class="bg-custom-3 py-5">
+    <div class="alert-secondary py-5">
         <div class="container">
-            <div class="d-block rounded-3 shadow-sm bg-custom-4 py-5 text-center">
+            <div class="d-block rounded-3 shadow-sm alert-light py-5 text-center">
                 <h3 class="text-blue-1">PRIKSA DATA ANDA</h3>
                 <p class="fs-5 text-blue-2">Sudah daftar keanggotaan cek datamu dibawah sini</p>
                 <div class="mx-auto w-75 w-lg-50 mb-3">
