@@ -5,6 +5,7 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use App\Models\news;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redis;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 
@@ -149,8 +150,33 @@ class newsAdmin extends Controller
         //
     }
 
-    public function editor()
+    public function editor(Request $request)
     {
-        // 
+        if($request->hasFile('upload')) {
+            //get filename with extension
+            $filenamewithextension = $request->file('upload')->getClientOriginalName();
+       
+            //get filename without extension
+            $filename = pathinfo($filenamewithextension, PATHINFO_FILENAME);
+       
+            //get file extension
+            $extension = $request->file('upload')->getClientOriginalExtension();
+       
+            //filename to store
+            $filenametostore = $filename.'_'.time().'.'.$extension;
+       
+            //Upload File
+            $request->file('upload')->move(public_path() . "/images/uploaded/", $filenametostore);
+            // $request->file('upload')->storeAs('public/uploads', $filenametostore);
+     
+            $CKEditorFuncNum = $request->input('CKEditorFuncNum');
+            $url = url('/images/uploaded/' . $filenametostore); 
+            $msg = 'Image successfully uploaded'; 
+            $re = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '$url', '$msg')</script>";
+              
+            // Render HTML output 
+            @header('Content-type: text/html; charset=utf-8'); 
+            echo $re;
+        }
     }
 }

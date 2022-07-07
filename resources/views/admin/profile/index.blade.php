@@ -2,7 +2,7 @@
 
 @section('head')
 <title>Kopitu Denpasar - Profile admin kopitu</title>
-<link rel="stylesheet" href="{{ url('/dist/style/css/admin/profile.css') }}">
+<link rel="stylesheet" href="{{ url('/assets/dist/css/admin/profile.css') }}">
 @endsection
 
 @section('pages')

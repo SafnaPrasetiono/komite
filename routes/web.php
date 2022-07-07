@@ -67,7 +67,7 @@ Route::group(['prefix' => 'admin',  'middleware' => 'auth:admin'], function () {
     Route::post('/dashboard/news/create/store', [newsAdmin::class, 'store'])->name('admin.news.create.store');
     Route::get('/dashboard/news/edit/{id}', [newsAdmin::class, 'edit'])->name('admin.news.edit');
     Route::put('/dashboard/news/update/{id}', [newsAdmin::class, 'update'])->name('admin.news.update');
-    Route::get('/dashboard/news/upload/editore', [newsAdmin::class, 'editor'])->name('admin.news.upload.editor');
+    Route::post('/dashboard/news/upload/editore', [newsAdmin::class, 'editor'])->name('admin.news.upload.editor');
 
     // Routing Events
     Route::get('/dashboard/events', [eventAdmin::class, 'index'])->name('admin.events');

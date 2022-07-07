@@ -1,13 +1,16 @@
 <div>
     <div class="container-fluid mb-3">
-        <div class="d-flex flex-column flex-sm-row align-items-center p-3 bg-white rounded-3 border shadow-sm">
+        <div
+            class="d-flex flex-column flex-sm-row align-items-center py-4 py-sm-3 px-3 bg-white rounded-3 border shadow-sm">
             <div class="img-profile">
                 @if (auth('admin')->user()->avatar == 'sample-images.png')
                 <div class="img-profile-content"
-                    style="background-image: url('/images/avatar/{{auth('admin')->user()->avatar }}');"></div>
+                    style="background-image: url('/images/avatar/{{auth('admin')->user()->avatar }}');">
+                </div>
                 @else
                 <div class="img-profile-content"
-                    style="background-image: url('/images/avatar/admin/{{auth('admin')->user()->avatar }}');"></div>
+                    style="background-image: url('/images/avatar/admin/{{auth('admin')->user()->avatar }}');">
+                </div>
                 @endif
                 <label for="img-upload" class="btn position-absolute bottom-0 lh-sm py-0 w-100 text-white"
                     style="background-color: #ffffff95">
@@ -22,6 +25,8 @@
             </div>
         </div>
     </div>
+
+
     <div class="container-fluid">
         <div class="d-block bg-white rounded-3 border shadow-sm">
             <div class="d-flex align-items-center py-2 px-3 border-bottom">
@@ -80,23 +85,25 @@
     </div>
 
     <script>
-        function uploadImages()
-        {
+        function uploadImages(){
             Livewire.emit('images')
         }
-        window.addEventListener('success', event => {
-            Swal.fire({
-                icon: 'success',
-                title: 'Good Jobs!',
-                text: event.detail,
+        window.addEventListener('DOMContentLoaded', () => {
+            window.addEventListener('success', event => {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Good Jobs!',
+                    text: event.detail,
+                })
             })
-        })
-        window.addEventListener('erros', event => {
-            Swal.fire({
-                icon: 'error',
-                title: 'Opps...!',
-                text: event.detail,
+            window.addEventListener('erros', event => {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Opps...!',
+                    text: event.detail,
+                })
             })
-        })
+        });
+
     </script>
 </div>

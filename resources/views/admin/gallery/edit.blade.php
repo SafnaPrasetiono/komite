@@ -131,12 +131,9 @@
 
 @section('script')
 <script>
-    ClassicEditor.create(document.querySelector("#editors"))
-    .then((newEditor) => {
-        editor = newEditor;
-    })
-    .catch((error) => {
-        console.error(error);
+    CKEDITOR.replace( 'editors', {
+        filebrowserUploadUrl: "{{route('admin.news.upload.editor', ['_token' => csrf_token() ])}}",
+        filebrowserUploadMethod: 'form'
     });
 </script>
 <script>

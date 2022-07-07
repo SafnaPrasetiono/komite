@@ -52,7 +52,7 @@
                 <div class="mb-3">
                     <label for="content" class="form-label">Content</label>
                     <textarea name="content" id="editors" rows="10"
-                        class="form-control @error('content') is-invalid @enderror">{{ old('content') }}</textarea>
+                        class=" editors form-control @error('content') is-invalid @enderror">{{ old('content') }}</textarea>
                     @error('content')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -70,12 +70,16 @@
 
 @section('script')
 <script>
-    ClassicEditor.create(document.querySelector("#editors"))
-    .then((newEditor) => {
-        editor = newEditor;
-    })
-    .catch((error) => {
-        console.error(error);
+    // ClassicEditor.create(document.querySelector("#editors"))
+    // .then((newEditor) => {
+    //     editor = newEditor;
+    // })
+    // .catch((error) => {
+    //     console.error(error);
+    // });
+    CKEDITOR.replace( 'editors', {
+        filebrowserUploadUrl: "{{route('admin.news.upload.editor', ['_token' => csrf_token() ])}}",
+        filebrowserUploadMethod: 'form'
     });
 </script>
 @endsection

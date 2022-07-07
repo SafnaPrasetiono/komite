@@ -48,7 +48,6 @@
         </div>
     </div>
 
-    <script src="{{ url('/dist/style/js/jquery.js') }}"></script>
     <script>
         document.addEventListener('pModalShow', () => {
             $('#passwordModal').modal('show');

@@ -3,8 +3,9 @@
 @section('head')
 <title>Komite UMKM - Buat galeri baru</title>
 <style>
-    .ck-editor__editable {
-        min-height: 200px;
+    .editor {
+        height: auto;
+        min-height: 300px;
         box-shadow: unset !important;
         border-radius: 0px 0px 4px 4px !important;
     }
@@ -111,12 +112,16 @@
 
 @section('script')
 <script>
-    ClassicEditor.create(document.querySelector("#editors"))
-    .then((newEditor) => {
-        editor = newEditor;
-    })
-    .catch((error) => {
-        console.error(error);
+    // ClassicEditor.create(document.querySelector("#editors"))
+    // .then((newEditor) => {
+    //     editor = newEditor;
+    // })
+    // .catch((error) => {
+    //     console.error(error);
+    // });
+    CKEDITOR.replace( 'editors', {
+        filebrowserUploadUrl: "{{route('admin.news.upload.editor', ['_token' => csrf_token() ])}}",
+        filebrowserUploadMethod: 'form'
     });
 </script>
 @endsection

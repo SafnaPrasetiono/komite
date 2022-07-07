@@ -14,8 +14,9 @@
         </div>
         <div class="d-block mb-3">
             <div class="row g-3">
+
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                    <div class="card rounded-0 p-2 shadow">
+                    <div class="card border-0 p-2 shadow-sm">
                         <div class="d-flex align-items-center px-2">
                             <i class="fas fa-newspaper fa-3x"></i>
                             <div class="card-body text-end">
@@ -28,6 +29,49 @@
                         <a href="{{ route('admin.news') }}" class="stretched-link"></a>
                     </div>
                 </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card border-0 p-2 shadow-sm">
+                        <div class="d-flex align-items-center px-2">
+                            <i class="fas fa-calendar-alt fa-3x fa-fw"></i>
+                            <div class="card-body text-end">
+                                <p class="card-title fs-2 mb-0">{{ $events }}</p>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white px-1">
+                            <small class="text-start fw-bold">Data Events</small>
+                        </div>
+                        <a href="{{ route('admin.events') }}" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card border-0 p-2 shadow-sm">
+                        <div class="d-flex align-items-center px-2">
+                            <i class="fas fa-images fa-3x fa-fw"></i>
+                            <div class="card-body text-end">
+                                <p class="card-title fs-2 mb-0">{{ $gallery }}</p>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white px-1">
+                            <small class="text-start fw-bold">Data Gallery</small>
+                        </div>
+                        <a href="{{ route('admin.events') }}" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card border-0 p-2 shadow-sm">
+                        <div class="d-flex align-items-center px-2">
+                            <i class="fas fa-users fa-3x fa-fw"></i>
+                            <div class="card-body text-end">
+                                <p class="card-title fs-2 mb-0">{{ $members }}</p>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white px-1">
+                            <small class="text-start fw-bold">Data Members</small>
+                        </div>
+                        <a href="{{ route('admin.events') }}" class="stretched-link"></a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
