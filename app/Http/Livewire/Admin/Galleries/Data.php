@@ -11,6 +11,7 @@ class Data extends Component
 {
     use WithPagination;
     public $post_id;
+    public $search, $pages;
 
     protected $listeners = ["deleteAction" => "delete"];
 
@@ -31,10 +32,19 @@ class Data extends Component
             $this->dispatchBrowserEvent('error', 'sorry something problem in database!');
         }
     }
+
+    public function mount()
+    {
+        $this->pages = 25;
+    }
     
     public function render()
     {
-        $data = galleries_content::orderBy('created_at')->paginate(24);
+        if($this->search){
+            $data = galleries_content::where('title', 'like', '%'. $this->search .'%')->orderBy('date_start', 'desc')->paginate($this->pages);
+        } else {
+            $data = galleries_content::orderBy('date_start', 'desc')->paginate($this->pages);
+        }
         return view('livewire.admin.galleries.data', ['data' => $data]);
     }
 }

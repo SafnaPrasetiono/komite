@@ -1,17 +1,20 @@
 <div>
 	<div class="d-flex align-items-center py-3">
 		<a class="btn btn-theme px-3" href="{{ route('admin.gallery.create') }}">Tambah</a>
-		<div class="ms-auto">
-			<select wire:model='pages' class="form-select" aria-label="Default select example">
-				<option value="12">12</option>
-				<option value="25">25</option>
-				<option value="50">50</option>
-				<option value="100">100</option>
-				<option value="99999">all</option>
-			</select>
+		<div class="d-flex ms-auto">
+			<input wire:model='search' type="text" class="form-control" placeholder="Cari...">
+			<div class="ms-2" style="width: 100px">
+				<select wire:model='pages' class="form-select" aria-label="Default select example">
+					<option value="25">25</option>
+					<option value="50">50</option>
+					<option value="100">100</option>
+					<option value="200">200</option>
+					<option value="99999999999">all</option>
+				</select>
+			</div>
 		</div>
 	</div>
-	<div class="table-responsive mb-3">
+	<div class="table-responsive mb-3" wire:loading.remove wire:target='search'>
 		<table class="table table-borderless">
 			<thead class="alert-secondary">
 				<tr>
@@ -49,6 +52,14 @@
 				@endforeach
 			</tbody>
 		</table>
+	</div>
+	<div class="border rounded p-5 mb-3" wire:loading.block wire:target='search'>
+		<div class="d-flex justify-content-center mb-4">
+			<div class="spinner-border" role="status">
+			  <span class="visually-hidden">Loading...</span>
+			</div>
+		</div>
+		<p class="fw-bold fs-5 text-center m-0">Loading...</p>
 	</div>
 	<div class="d-flex align-items-center">
 		<p class="mb-0 border py-1 px-2 rounded">
