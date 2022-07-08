@@ -117,7 +117,7 @@
     </div>
 </div>
 
-<div class="position-relative py-5" style="background-color: #007bff10;">
+<div class="position-relative py-5" style="background-color: #007bff20;">
     <div class="container mb-3">
         <div class="d-block py-1 mb-3">
             <h3 class="mb-0 fw-bold">KOPITU PROGRAM</h3>
@@ -148,6 +148,20 @@
                         </div>
                         <div class="col-5 ms-md-auto">
                             <img src="{{ url('/images/service/bisnis-incubators-icons.png') }}" alt="kopitu_estore" class="img-fluid">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <a class="link-boxs" href="#">
+                    <div class="row g-3 align-items-center justify-content-center">
+                        <div class="col-7">
+                            <h4 class="fw-light mb-1">Kopitu</h4>
+                            <h4 class="fw-bold mb-3">TANIPRENEUR</h4>
+                            <p class="mb-0 text-primary">READ MORE</i></p>
+                        </div>
+                        <div class="col-5 ms-md-auto">
+                            <img src="{{ url('/images/service/kopitu-tanipreneur.png') }}" alt="kopitu-tanipreneur" class="img-fluid">
                         </div>
                     </div>
                 </a>

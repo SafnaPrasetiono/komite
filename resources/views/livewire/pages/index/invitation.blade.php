@@ -1,5 +1,5 @@
 <div>
-    <div class="py-5 alert-primary">
+    <div class="py-5" style="background-color: #007bff20;">
         <div class="container py-4">
             <div class="row align-items-center justify-content-center g-4">
                 <div class="col-12 col-md-6 order-1 order-md-2">

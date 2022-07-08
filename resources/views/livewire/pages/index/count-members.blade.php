@@ -1,6 +1,6 @@
 <div>
-    <div class="py-5" style="background-color: #007bff30;">
-        <div class="container py-0 py-lg-3">
+    <div class="py-5" style="background-color: #007bff20;">
+        <div class="container py-2 py-lg-5">
             <div class="d-flex flex-column flex-lg-row align-items-center">
                 <div class="d-flex flex-column flex-sm-row align-items-center rounded-pill p-3 bg-white me-lg-5 mb-5 mb-lg-0">
                     <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary order-2 order-sm-1" style="width: 160px; height: 160px;">

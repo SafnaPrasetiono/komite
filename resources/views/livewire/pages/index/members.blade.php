@@ -1,5 +1,5 @@
 <div>
-    <div class="pt-5 pb-4" style="background-color: #007bff50;">
+    <div class="py-5" style="background-color: #007bff20;">
         <div class="container pt-3 pb-4">
             <div class="d-block mb-4">
                 <h3 class="fw-bold">Keanggotaan KOPITU</h3>

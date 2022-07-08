@@ -31,7 +31,7 @@
                             <p class="card-text text-ellipsis-4">
                                 {{ $item->description }}
                             </p>
-                            <a href="{{ route('news.detail', ['slug' => $item->slug, 'id' => $item->id_news ]) }}"
+                            <a href="{{ route('news.detail', ['slug' => $item->slug ]) }}"
                                 class="btn link-primary px-0">Lihat detail <i
                                     class="fas fa-arrow-right fa-sm fa-fw"></i> </a>
                         </div>

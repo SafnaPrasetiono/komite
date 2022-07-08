@@ -12,7 +12,7 @@
                                         style="background-image: url('/images/news/{{$item->images}}')">
                                     </div>
                                     <div class="position-absolute bottom-0 px-4 py-3 p-lg-5">
-                                        <a href="{{ route('news.detail', ['slug' => $item->slug, 'id' => $item->id_news ]) }}"
+                                        <a href="{{ route('news.detail', ['slug' => $item->slug ]) }}"
                                             class="card-link-news-banners fs-5 text-ellipsis-3 mb-0 text-decoration-none">{{
                                             $item->title }}</a>
                                         <small class="text-light">berita, {{ date('d F Y', strtotime($item->created_at))
@@ -30,7 +30,7 @@
                     <div class="row gy-3">
                         @foreach ($dataSecondary as $item)
                         <div class="col-12 col-sm-6 col-lg-12">
-                            <a href="{{ route('news.detail', ['slug' => $item->slug, 'id' => $item->id_news ]) }}"
+                            <a href="{{ route('news.detail', ['slug' => $item->slug ]) }}"
                                 class="card card-news-secondary rounded-0 border-0 text-white">
                                 <div class="btn-images-news ratio ratio-16x9"
                                     style="background-image: url('/images/news/{{$item->images}}')">

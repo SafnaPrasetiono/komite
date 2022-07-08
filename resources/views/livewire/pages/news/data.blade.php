@@ -32,7 +32,7 @@
             </div>
             <div class="col-12 col-sm-8">
                 <div class="card-body px-0 px-sm-2 px-md-3 py-sm-0 py-md-0">
-                    <a href="{{ route('news.detail', ['slug' => $item->slug, 'id' => $item->id_news ]) }}"
+                    <a href="{{ route('news.detail', ['slug' => $item->slug ]) }}"
                         class="fs-5 link-primary text-decoration-none text-ellipsis-2 mb-0">{{ $item->title }}</a>
                     <p class="card-text mb-2 mb-sm-1"><small class="text-muted">berita, {{ date('d F Y', strtotime($item->created_at)) }}</small></p>
                     <p class="card-text text-ellipsis-4">{{ $item->description }}</p>

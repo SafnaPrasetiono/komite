@@ -1,5 +1,5 @@
 <div>
-    <div class="py-5 alert alert-info px-0 m-0">
+    <div class="py-5" style="background-color: #007bff20;">
         <div class="container">
             <div class="d-block mb-4">
                 <h2>Events</h2>
