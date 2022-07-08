@@ -167,6 +167,20 @@
                 </a>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
+                <a class="link-boxs" href="#">
+                    <div class="row g-3 align-items-center justify-content-center">
+                        <div class="col-7">
+                            <h4 class="fw-light mb-1">Kopitu</h4>
+                            <h4 class="fw-bold mb-3">SISTERCITY</h4>
+                            <p class="mb-0 text-primary">READ MORE</i></p>
+                        </div>
+                        <div class="col-5 ms-md-auto">
+                            <img src="{{ url('/images/service/kopitu-sister-city.png') }}" alt="kopitu-sister-city" class="img-fluid">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
                 <a class="link-boxs" href="https://kopitu.com" target="blank">
                     <div class="row g-3 align-items-center justify-content-center">
                         <div class="col-7">
