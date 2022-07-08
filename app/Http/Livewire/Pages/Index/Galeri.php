@@ -4,6 +4,7 @@ namespace App\Http\Livewire\Pages\Index;
 
 use App\Models\galleries;
 use App\Models\galleries_content;
+use Illuminate\Support\Arr;
 use Livewire\Component;
 
 class Galeri extends Component
@@ -19,7 +20,16 @@ class Galeri extends Component
 
     public function render()
     {
-        $data = galleries::orderBy('created_at', 'desc')->limit(11)->get();
+        $data = [];
+        $content = galleries_content::where('publish', 1)->orderBy('date_start', 'desc')->get();
+        foreach ($content as $value) {
+            $images = galleries::where('id_galleries_contents', $value->id_galleries_contents)->get();
+            foreach($images as $img){
+                array_push($data, $img);
+            }
+        }
+        // dd($content);
+        // dd($data);
         return view('livewire.pages.index.galeri', ['data' => $data]);
     }
 }

@@ -5,7 +5,7 @@
         <div class="container mb-3">
             <div class="d-flex align-items-center py-3 galery-title">
                 <i class="fas fa-image fa-2x fa-fw text-dark-blue"></i>
-                <p class="mb-0 fs-3 fw-bold ms-2 text-dark-blue">Galeri KOPITU</p>
+                <p class="mb-0 fs-3 fw-bold ms-2 text-dark-blue">Kaleidoskop Galeri</p>
             </div>
             <div class="row g-2 justify-content-center align-items-stretch">
                 @foreach ($data as $index => $item)
