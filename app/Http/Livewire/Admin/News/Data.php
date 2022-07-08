@@ -10,6 +10,7 @@ class Data extends Component
 {
     use WithPagination;
     public $id_news;
+    public $search, $pages;
 
     protected $listeners = ["deleteAction" => "delete"];
 
@@ -29,9 +30,18 @@ class Data extends Component
         }
     }
 
+    public function mount()
+    {
+        $this->pages = 25;
+    }
+    
     public function render()
     {
-        $data = news::orderBy('created_at', 'desc')->paginate(12);
+        if($this->search){
+            $data = news::where('title', 'like', '%'. $this->search . '%')->orderBy('created_at', 'desc')->paginate($this->pages);
+        } else {
+            $data = news::orderBy('created_at', 'desc')->paginate($this->pages);
+        }
         return view('livewire.admin.news.data', [
             'data' => $data
         ]);

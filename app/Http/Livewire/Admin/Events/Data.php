@@ -10,6 +10,7 @@ class Data extends Component
 {
     use WithPagination;
     public $id_events;
+    public $search, $pages;
 
     protected $listeners = ["deleteAction" => "delete"];
 
@@ -28,9 +29,19 @@ class Data extends Component
             $this->dispatchBrowserEvent('error', 'sorry something problem in database!');
         }
     }
+
+    public function mount()
+    {
+        $this->pages = 25;
+    }
+
     public function render()
     {
-        $data = events::orderBy('created_at', 'desc')->paginate(12);
+        if($this->search){
+            $data = events::where('title', 'like', '%' . $this->search . '%')->orderBy('created_at', 'desc')->paginate($this->pages);
+        } else {
+            $data = events::orderBy('created_at', 'desc')->paginate($this->pages);
+        }
         return view('livewire.admin.events.data', ['data' => $data]);
     }
 }

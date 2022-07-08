@@ -1,11 +1,20 @@
 <div>
     <div class="d-flex mb-3">
         <a href="{{ route('admin.events.create') }}" class="btn btn-outline-secondary">Tambah</a>
-        <div class="ms-auto">
-            <input type="text" class="form-control" placeholder="Cari Bertia...">
-        </div>
+        <div class="d-flex ms-auto">
+			<input wire:model='search' type="text" class="form-control" placeholder="Cari...">
+			<div class="ms-2" style="width: 100px">
+				<select wire:model='pages' class="form-select" aria-label="Default select example">
+					<option value="25">25</option>
+					<option value="50">50</option>
+					<option value="100">100</option>
+					<option value="200">200</option>
+					<option value="99999999999">all</option>
+				</select>
+			</div>
+		</div>
     </div>
-    <div class="d-block table-responsive">
+    <div class="table-responsive" wire:loading.remove wire:target='search'>
         <table class="table table-borderless">
             <thead class="alert-secondary">
                 <tr>
@@ -44,6 +53,14 @@
             </tbody>
         </table>
     </div>
+    <div class="border rounded p-5 mb-3" wire:loading.block wire:target='search'>
+		<div class="d-flex justify-content-center mb-4">
+			<div class="spinner-border" role="status">
+			  <span class="visually-hidden">Loading...</span>
+			</div>
+		</div>
+		<p class="fw-bold fs-5 text-center m-0">Loading...</p>
+	</div>
     <div class="d-flex align-items-center">
         <p class="mb-0 border py-1 px-2 rounded">
             <span class="fw-bold">{{ $data->count() }}</span>
